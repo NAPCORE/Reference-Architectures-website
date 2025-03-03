@@ -1,0 +1,19 @@
+[project]
+name = "NAPCORE Reference Architectures website"
+version = "0.1.0"
+description = "Minimal website with browsable models of National Body and National Access Point Reference Architectures."
+authors = [
+    {name = "Petr Bureš", email = "petr.bures@tamtamresearch.com"},
+]
+dependencies = [
+    "mkdocs>=1.6.0",
+    "mkdocs-material>=9.5.19",
+    "mkdocs-macros-plugin>=1.0.5",
+]
+requires-python = "==3.12.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
