@@ -47,3 +47,5 @@ markdown_extensions:
 plugins:
   - search
   - macros
+  - git-revision-date-localized:
+      type: date
