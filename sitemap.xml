@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://napcore.github.io/Reference-Architectures-website/</loc>
+         <lastmod>2025-03-26</lastmod>
+    </url>
+    <url>
+         <loc>https://napcore.github.io/Reference-Architectures-website/about/</loc>
+         <lastmod>2025-03-26</lastmod>
+    </url>
+    <url>
+         <loc>https://napcore.github.io/Reference-Architectures-website/frame/</loc>
+         <lastmod>2025-03-26</lastmod>
+    </url>
+    <url>
+         <loc>https://napcore.github.io/Reference-Architectures-website/ref_archs/</loc>
+         <lastmod>2025-03-26</lastmod>
+    </url>
+    <url>
+         <loc>https://napcore.github.io/Reference-Architectures-website/uml/frame_metamodel/</loc>
+         <lastmod>2025-03-26</lastmod>
+    </url>
+    <url>
+         <loc>https://napcore.github.io/Reference-Architectures-website/uml/frame_repository/</loc>
+         <lastmod>2025-03-26</lastmod>
+    </url>
+    <url>
+         <loc>https://napcore.github.io/Reference-Architectures-website/uml/nap_architecture/</loc>
+         <lastmod>2025-03-26</lastmod>
+    </url>
+    <url>
+         <loc>https://napcore.github.io/Reference-Architectures-website/uml/nb_architecture/</loc>
+         <lastmod>2025-03-26</lastmod>
+    </url>
+</urlset>
