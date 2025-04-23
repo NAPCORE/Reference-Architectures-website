@@ -2,51 +2,106 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Other Elements::NB _Vision</title>
+<title>ITS added Value::Harmonized self-declaration process for international data and service provider</title>
 <link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../js/displayToc.js" type="text/javascript"></script>
 <script>
-function initPage(src) {	
-	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
-		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
-	else
-		parent.initPage(src);
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
 }
 
-function nameClassifier(name, separator)
-{
-  var str = name;
-  var classifierName;
-  var node = document.getElementById('name_classifier');
-  if(node != null)
-  {
-    classifierName = node.innerHTML;
-  }
-  if(classifierName != "")
-  {
-   str += separator + classifierName;
-  }
-  
-  return str;
-}
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
 </script>
+<style>
+
+</style>
 </head>
-<body onload="initPage(this);" class="Content">
-<div class="pageHeader"></div>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> ITS added Value::Harmonized self-declaration process for international data and service provider </h1>
+			<!-- <img class="header_image" src="../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../EA5.htm">National Body Reference Architecture</a> / <a href="../EA21.htm">00 NB Motivational Layer</a> / <a href="EA47.htm">ITS added Value</a> / <a href="EA56.htm">Harmonized self-declaration process for international data and service provider</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<a href="EA47.htm">ITS added Value</a></ul>
+
+					</td>
+					<td class="contentcell"><div class="pageHeader"></div>
 <div class="PageBody">
-	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("NB _Vision", " : "))</script>  : Public  &lt;&lt;FRAME_ITS_Vision&gt;&gt; FRAME_ITS_Vision</span>
-	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+	<span class="ObjectTitle">Harmonized self-declaration process for international data and service provider  : Public  &lt;&lt;FRAME_ITS_Service_Added_Value&gt;&gt; FRAME_ITS_Service_Added_Value</span>
+	<table border="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">28.09.2023 10:11:15</td>
+			<td width="85%" class="ObjectDetailsValue">27.11.2023 10:18:21</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">16.11.2023 11:24:38</td>
+			<td class="ObjectDetailsValue">29.07.2024 14:48:21</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
-			<td class="ObjectDetailsTopic"><img src="../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
 			<td class="ObjectDetailsValue"></td>
 		</tr>
 		<tr id="proj00" style="display: none;">
@@ -78,30 +133,64 @@ function nameClassifier(name, separator)
 			<td class="ObjectDetailsValue"></td>
 		</tr>
 		<tr id="proj05" style="display: none;">
-			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Multiplicity:</td>
+			<td class="ObjectDetailsTopic" >Multiplicity:</td>
 			<td class="ObjectDetailsValue"></td>
 		</tr>
 		<tr>
-			<td class="ObjectDetailsTopic"><img src="../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
 			<td class="ObjectDetailsValue"></td>
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{80F8D22D-6FA7-4d3c-BA96-439708D36890}</td>
+			<td class="ObjectDetailsValue">{4A4D2B0E-B0EE-425a-ABDE-41C38E9D1124}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"></td>
+			<td class="ObjectDetailsValue"><a href="../EA19.htm">00_NB_Motivational View</a></td>
 		</tr>
 	</table>
-	
+	<div class="ObjectDetailsNotes">For international data and service providers the harmonized approach of the handling the self-declarations and the compliance assessment procedure will make the procedure much more easy and time efficient.&lt;br/&gt;</div>
+
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
-			<li onClick="parent.toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
-			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
+			<li onClick="parent != null ? parent.toggleItem('AssociationsTo') : toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="parent != null ? parent.toggleItem('CustomProperties') : toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
 		</ul>
+		<div class="ItemBody" id="AssociationsToTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../EA5/EA62.htm">«FRAME_Stakeholder» Data and Service provider</a><br />
+						FRAME_Stakeholder «defines» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink20" /></button>Details:
+							<div id="detailsDIVLink20" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
 		<div class="ItemBody" id="CustomPropertiesTable">
-			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+			<table class="Table ea_table">
 				<tr>
 					<td width="30%" class="TableHeading">Property</td>
 					<td width="70%" class="TableHeading">Value</td>
@@ -123,27 +212,14 @@ function nameClassifier(name, separator)
 
 
 			</table>
-		</div>		<div class="ItemBody" id="LinksTable">
-			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
-				<tr>
-					<td width="30%" class="TableHeading">Object</td>
-					<td width="10%" class="TableHeading">Type</td>
-					<td width="10%" class="TableHeading">Connection</td>
-					<td width="10%" class="TableHeading">Direction</td>
-					<td width="40%" class="TableHeading">Notes</td>
+		</div>	</div>
+ </div>
+ </td>
 				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../EA3/EA45.htm">«FRAME_ITS_Service_Added_Value» Enhance the findability of data and services</a></td>
-					<td width="10%" class="TableRow" valign="top">FRAME_ITS_Service_Added_Value</td>
-					<td width="10%" class="TableRow" valign="top">Realization</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-
-			</table>
-		</div>
-	</div>
-<div class="pageFooter"></div>
- 
+			</tbody>
+		</table>
+		
+</div>
 </body>
 </html>
+

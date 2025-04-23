@@ -2,51 +2,106 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>ITS added Value</title>
+<title>Further Elements::Delegated Regulations of ITS Directive 2010/EU/40</title>
 <link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../js/displayToc.js" type="text/javascript"></script>
 <script>
-function initPage(src) {	
-	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
-		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
-	else
-		parent.initPage(src);
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
 }
 
-function nameClassifier(name, separator)
-{
-  var str = name;
-  var classifierName;
-  var node = document.getElementById('name_classifier');
-  if(node != null)
-  {
-    classifierName = node.innerHTML;
-  }
-  if(classifierName != "")
-  {
-   str += separator + classifierName;
-  }
-  
-  return str;
-}
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
 </script>
+<style>
+
+</style>
 </head>
-<body onload="initPage(this);" class="Content">
-<div class="pageHeader"></div>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> Further Elements::Delegated Regulations of ITS Directive 2010/EU/40 </h1>
+			<!-- <img class="header_image" src="../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../EA3.htm">National Body Reference Architecture</a> / <a href="../EA18.htm">NB Motivational Layer</a> / <a href="EA39.htm">Further Elements</a> / <a href="EA40.htm">Delegated Regulations of ITS Directive 2010/EU/40</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<a href="EA39.htm">Further Elements</a></ul>
+
+					</td>
+					<td class="contentcell"><div class="pageHeader"></div>
 <div class="PageBody">
-	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("ITS added Value", " : "))</script>  : Public   Package</span>
-	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+	<span class="ObjectTitle">Delegated Regulations of ITS Directive 2010/EU/40  : Public  &lt;&lt;FRAME_ITS_Domain&gt;&gt; FRAME_ITS_Domain</span>
+	<table border="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">16.11.2023 11:20:04</td>
+			<td width="85%" class="ObjectDetailsValue">28.09.2023 10:10:32</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">16.11.2023 11:20:04</td>
+			<td class="ObjectDetailsValue">10.02.2025 15:56:50</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
-			<td class="ObjectDetailsTopic"><img src="../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
 			<td class="ObjectDetailsValue"></td>
 		</tr>
 		<tr id="proj00" style="display: none;">
@@ -78,24 +133,79 @@ function nameClassifier(name, separator)
 			<td class="ObjectDetailsValue"></td>
 		</tr>
 		<tr id="proj05" style="display: none;">
-			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Multiplicity:</td>
+			<td class="ObjectDetailsTopic" >Multiplicity:</td>
 			<td class="ObjectDetailsValue"></td>
 		</tr>
 		<tr>
-			<td class="ObjectDetailsTopic"><img src="../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
 			<td class="ObjectDetailsValue"></td>
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{65B6FE48-9CD0-4540-84D0-54C6859CC201}</td>
+			<td class="ObjectDetailsValue">{2C719A1A-9DD9-4d49-B156-FE9A59A7297C}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"></td>
+			<td class="ObjectDetailsValue"><a href="../EA16.htm">00_NB_Motivational View</a></td>
 		</tr>
 	</table>
-	
-<div class="pageFooter"></div>
- 
+	<div class="ObjectDetailsNotes">Priority Action a of the ITS Directive 2010/40/EU &lt;br/&gt;&#8226; Commission Delegated Regulation (EU) 2017/1926 &lt;br/&gt;&#8226; Abbreviation: MMTIS &lt;br/&gt;the provision of EU-wide multimodal travel information services &lt;br/&gt;&lt;br/&gt;Priority Action c of the ITS Directive 2010/40/EU &lt;br/&gt;&#8226; Commission Delegated Regulation (EU) No 886/2013 &lt;br/&gt;&#8226; Abbreviation: SRTI &lt;br/&gt;the provision of road safety related minimum universal traffic information free of charge to users&lt;br/&gt;&lt;br/&gt;Priority Action b of the ITS Directive 2010/40/EU &lt;br/&gt;&#8226; Commission Delegated Regulation (EU) 2015/962 &lt;br/&gt;&#8226; Commission Delegated Regulation (EU) 2022/670 &lt;br/&gt;&#8226; Abbreviation: RTTI &lt;br/&gt;the provision of EU-wide real-time traffic information services &lt;br/&gt;&lt;br/&gt;Priority Action e of the ITS Directive 2010/40/EU &lt;br/&gt;&#8226; Commission Delegated Regulation (EU) No 885/2013 &lt;br/&gt;&#8226; Abbreviation: SSTP &lt;br/&gt;the provision of information services for safe and secure parking places for trucks and commercial vehicles &lt;br/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent != null ? parent.toggleItem('CustomProperties') : toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
+			<li onClick="parent != null ? parent.toggleItem('Links') : toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+		<div class="ItemBody" id="CustomPropertiesTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Property</td>
+					<td width="70%" class="TableHeading">Value</td>
+				</tr>
+			<tr>
+				<td width="30%" class="TableRow">_HideUmlLinks:</td>
+				<td width="70%" class="TableRow">True</td>
+			</tr>
+
+			<tr>
+				<td width="30%" class="TableRow">_defaultDiagramType:</td>
+				<td width="70%" class="TableRow">ArchiMate3::Motivation</td>
+			</tr>
+
+			<tr>
+				<td width="30%" class="TableRow">isFinalSpecialization:</td>
+				<td width="70%" class="TableRow">0</td>
+			</tr>
+
+
+			</table>
+		</div>		<div class="ItemBody" id="LinksTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA41.htm">«FRAME_ITS_Service» Fulfilling National Body activities and reliabilities according to ITS directive 2010/EU/40</a></td>
+					<td width="10%" class="TableRow" valign="top">FRAME_ITS_Service</td>
+					<td width="10%" class="TableRow" valign="top">Usage</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+ </div>
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
 </body>
 </html>
+

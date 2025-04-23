@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Non Compliance Process</title>
+<link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> Non Compliance Process </h1>
+			<!-- <img class="header_image" src="../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../EA5.htm">National Body Reference Architecture</a> / <a href="../EA171.htm">05 NB Communication View</a> / <a href="EA191.htm">Non Compliance Process</a> / <a href="EA189.htm">Non Compliance Process</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<li><img src="../../../images/175.png" alt="Diagram"/> <a href="EA189.htm">Non Compliance Process</a></li>
+<li><img src="../../../images/21.png" alt="Activity"/> <a href="EA194.htm"></a></li>
+<li><img src="../../../images/21.png" alt="Activity"/> <a href="EA195.htm">Administrative decision on non-compliance and the consequences of non-compliance</a></li>
+<li><img src="../../../images/21.png" alt="Activity"/> <a href="EA196.htm">Identify actions available for the national body to address non-compliance</a></li>
+<li><img src="../../../images/21.png" alt="Activity"/> <a href="EA197.htm">Identify non-compliance to individual articles of</a></li>
+<li><img src="../../../images/21.png" alt="Activity"/> <a href="EA198.htm">Identify objectives of the applicable delegated act or the ITS directive affected by non-compliance</a></li>
+<li><img src="../../../images/21.png" alt="Activity"/> <a href="EA199.htm">Initiate the Actions prescribed in the decision on non-compliance and consequences of non-compliance</a></li>
+<li><img src="../../../images/21.png" alt="Activity"/> <a href="EA200.htm">May appeals result</a></li>
+<li><img src="../../../images/21.png" alt="Activity"/> <a href="EA201.htm">Process appeals made by</a></li>
+<li><img src="../../../images/21.png" alt="Activity"/> <a href="EA202.htm">Receives administrative decision on non-compliance</a></li>
+<li><img src="../../../images/21.png" alt="Activity"/> <a href="EA203.htm">Select actions which are proportional to the objectives when applied individually or as a package</a></li>
+<li><img src="../../../images/21.png" alt="Activity"/> <a href="EA204.htm">Select the action or a combination of Actions which best corresponds to the objectives of the delegated act and the ITS directive</a></li>
+</ul>
+
+					</td>
+					<td class="contentcell"><div class="PageBody">
+	<div class="diagram_image"> 
+<img src="EA190.png" usemap="#EA190" border="0" />
+
+<MAP NAME="EA190">
+<area shape="rect" coords="1487,90,1650,160" href="EA199.htm" target="_self">
+<area shape="rect" coords="1516,368,1621,438" href="EA200.htm" target="_self">
+<area shape="rect" coords="1517,208,1622,278" href="EA201.htm" target="_self">
+<area shape="rect" coords="1310,368,1415,438" href="EA202.htm" target="_self">
+<area shape="rect" coords="1289,208,1435,278" href="EA195.htm" target="_self">
+<area shape="rect" coords="1036,208,1228,278" href="EA204.htm" target="_self">
+<area shape="rect" coords="825,208,966,278" href="EA203.htm" target="_self">
+<area shape="rect" coords="636,208,764,278" href="EA196.htm" target="_self">
+<area shape="rect" coords="647,89,752,159" href="EA194.htm" target="_self">
+<area shape="rect" coords="436,89,584,159" href="EA198.htm" target="_self">
+<area shape="rect" coords="263,90,368,160" href="EA197.htm" target="_self">
+<area shape="rect" coords="49,356,139,426" href="../../EA4/EA2/EA154.htm" target="_self">
+<area shape="rect" coords="48,90,138,160" href="../../EA4/EA2/EA158.htm" target="_self">
+<area shape="rect" coords="10,10,1729,314" href="EA192.htm" target="_self">
+<area shape="rect" coords="10,343,1729,462" href="EA193.htm" target="_self">
+</MAP>
+ </div>
+	<div class="ObjectTitle">Non Compliance Process : FRAME_Diagram diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">24.06.2024 08:27:29</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">05.08.2024 09:48:02</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">BWI</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{B8249934-8794-40bc-9887-8DCADA8ADD60}</td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">todo:&lt;br/&gt;Description&lt;br/&gt;</div>
+
+</div>
+
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+

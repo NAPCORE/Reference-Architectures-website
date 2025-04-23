@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Identify possible actions which are proportional to the objectives when applied individually or as a package</title>
+<link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> Identify possible actions which are proportional to the objectives when applied individually or as a package </h1>
+			<!-- <img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../../EA3.htm">National Body Reference Architecture</a> / <a href="../../EA169.htm">NB Communication View</a> / <a href="../EA204.htm">Non Compliance Process</a> / <a href="EA209.htm">Service Processes</a> / <a href="EA220.htm">Identify possible actions which are proportional to the objectives when applied individually or as a package</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<a href="EA209.htm">Service Processes</a></ul>
+
+					</td>
+					<td class="contentcell"><div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">Identify possible actions which are proportional to the objectives when applied individually or as a package  : Public  &lt;&lt;FRAME_ITS_Service_Process&gt;&gt; FRAME_ITS_Service_Process</span>
+	<table border="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">05.08.2024 09:29:22</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">17.03.2025 11:46:14</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">benjamin.witsch</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" >Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{7615DF18-80CE-44f4-A8A0-6AC788682D66}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="../EA202.htm">Non Compliance Process</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">In its current form, the Delegated Regulations or the ITS Directive define no administrative powers for the NB to address non-compliance. Moreover, the Delegated Regulations or the ITS Directive define no procedure for a situation in which the results of compliance assessment (based on random inspections) indicate non-compliance in a service or a data set. The options available to the NB are therefore subject to national regulations. The extent to which the NB is &lt;b&gt;legally authorized to intervene&lt;/b&gt; in case of non-compliance and the type of actions it can take (e.g. rejection of submitted self-declarations, monetary penalties, administrative sanctions, recommendations and suggestions) depends on the legal basis of the establishment of each NB. However, such details might not be defined in all Member States.&lt;br/&gt;Assuming that the NB has the legal authority to impose sanctions in case of non-compliance, these actions should ideally be based on the &lt;b&gt;assessment of the impact&lt;/b&gt; of the specific type of non-compliance. Nevertheless, impact assessment of non-compliance may be very challenging. National Bodies are likely to encounter different types of &lt;b&gt;non-compliance&lt;/b&gt;, of various &lt;b&gt;levels&lt;/b&gt;, with different &lt;b&gt;causes&lt;/b&gt;, in different &lt;b&gt;contexts&lt;/b&gt; and with a wide &lt;b&gt;qualitative scope of impacts&lt;/b&gt;. The stakeholders may also be very diverse and have varying levels of cooperation with the National Body. In the context of assessing non-compliance, the impacts of non-compliance may have already occurred at the time of compliance assessment or they may occur in future with more or less certainty. In the first case, the NB may have no means to determine with certainty how the world would have evolved had the data or service been compliant (e.g. in a situation in which a compliant service or data set has never been available). In the latter case, the NB will be able to determine the impact and its likelihood to occur but will not know with certainty whether the impact will occur or not.&lt;br/&gt;The National Bodies can be expected to be experts in the field and to know and understand the &lt;b&gt;typical&lt;/b&gt; &lt;b&gt;use cases&lt;/b&gt; for the data and services covered by the Delegated Regulations. On the other hand, it may be unreasonable to assume the NB to have a complete and up to date picture of all possible uses of the data, including the less known users and use cases. Some use cases of the data or services may also be &lt;b&gt;novel&lt;/b&gt; and &lt;b&gt;not anticipated&lt;/b&gt; or predictable.&lt;br/&gt;It should also be noted that the impact of non-compliance is not the only factor that the NB should consider in selecting its actions. In addition, the National Body should consider which action or package of actions best &lt;b&gt;corresponds&lt;/b&gt; to the &lt;b&gt;objectives&lt;/b&gt; of the Delegated Regulations and the ITS Directive. These considerations can be very practical, e.g. not removing a data set from NAP due to minor quality defects.&lt;br/&gt;Actions taken to address non-compliance may &lt;b&gt;differ&lt;/b&gt; based on the results of the impact assessment. Reacting the same way to all non-compliance cases might be open to criticism depending on the actions taken. The impact of non-compliance is likely to differ from case to case. The more severe the impact is, the wider scope of actions is likely to be considered as reasonable and proportional for the NB. If the reaction is the same for all instances of non-compliance, the National Body may end up doing &quot;too little&quot; in cases with serious impacts or doing &quot;too much&quot; in case of minor compliance issues.&lt;br/&gt;Actions could also gradually increase the consequences for non-compliance depending on the severity and on the &lt;b&gt;repetitiveness&lt;/b&gt; of non-compliance.&lt;br/&gt;Specifically concerning the treatment of &lt;b&gt;non-provision&lt;/b&gt; of data, the same general principles for action apply. As an example, in Belgium, three relevant tasks are defined for the control body:&lt;br/&gt;&lt;ol&gt;<br />&lt;li&gt;Check if everyone that should register data has done so (based on stakeholder list &#8211; the difficulty here is to make this list, keep it up to date, have the right contact details etc.)&lt;/li&gt;&lt;li&gt;Run thorough compliance assessment based on random selection of datasets that are registered on the NAP&lt;/li&gt;&lt;li&gt;Investigate complaints from data re-users about data on the NAP (or complaints about data that should be on the NAP but is not or complaints from data-owners about incorrect re-use of their data).&lt;/li&gt;&lt;/ol&gt;<br />&lt;br/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent != null ? parent.toggleItem('CustomProperties') : toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
+			<li onClick="parent != null ? parent.toggleItem('Links') : toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+		<div class="ItemBody" id="CustomPropertiesTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Property</td>
+					<td width="70%" class="TableHeading">Value</td>
+				</tr>
+			<tr>
+				<td width="30%" class="TableRow">_HideUmlLinks:</td>
+				<td width="70%" class="TableRow">True</td>
+			</tr>
+
+			<tr>
+				<td width="30%" class="TableRow">_defaultDiagramType:</td>
+				<td width="70%" class="TableRow">ArchiMate3::Business</td>
+			</tr>
+
+			<tr>
+				<td width="30%" class="TableRow">isReadOnly:</td>
+				<td width="70%" class="TableRow">false</td>
+			</tr>
+
+			<tr>
+				<td width="30%" class="TableRow">isFinalSpecialization:</td>
+				<td width="70%" class="TableRow">0</td>
+			</tr>
+
+
+			</table>
+		</div>		<div class="ItemBody" id="LinksTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA216.htm">«FRAME_ITS_Service_Process» Optional: request further information from the stakeholder</a></td>
+					<td width="10%" class="TableRow" valign="top">FRAME_ITS_Service_Process</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA214.htm">«FRAME_ITS_Service_Process» Identify relevant stakeholder characteristics and cintextual factors related to non-complaint.</a></td>
+					<td width="10%" class="TableRow" valign="top">FRAME_ITS_Service_Process</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA211.htm">«FRAME_ITS_Service_Process» Collect possible other information related to identified non-compliance.</a></td>
+					<td width="10%" class="TableRow" valign="top">FRAME_ITS_Service_Process</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA213.htm">«FRAME_ITS_Service_Process» Identify objectives of the applicable delegated act of the ITS directive by non-compliance</a></td>
+					<td width="10%" class="TableRow" valign="top">FRAME_ITS_Service_Process</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA228.htm">«FRAME_ITS_Service_Process» Select the action or a combination of actions which corresponds best to the objectives of national laws, the delegated acts and the ITS directive.</a></td>
+					<td width="10%" class="TableRow" valign="top">FRAME_ITS_Service_Process</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+ </div>
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+

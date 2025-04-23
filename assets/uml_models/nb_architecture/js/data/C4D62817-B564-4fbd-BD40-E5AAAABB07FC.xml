@@ -1,1 +1,2 @@
-tocTab[tocTab.length] = new Array("0.6.1:1", "", "Compliance assesment", "EARoot/EA6/EA1/EA171.htm", "175.png", "2095", "0", "", "Logical diagram0","{0175F026-9952-4588-ACAF-6DA60158B79A}");
+tocTab[tocTab.length] = new Array("0.5.1:1", "", "Compliance assessment", "EARoot/EA5/EA1/EA179.htm", "175.png", "219", "0", "", "Logical diagram0","{0175F026-9952-4588-ACAF-6DA60158B79A}");
+tocTab[tocTab.length] = new Array("0.5.1.1", "1", "Service Processes", "EARoot/EA5/EA1/EA1/EA186.htm", "4.png", "", "", "{0185B279-5D3B-4e62-8F32-B14B61417EF5}", "Package");

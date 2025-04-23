@@ -4,19 +4,462 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>National Body Reference Architecture</title>
 <link href="css/ea.css" rel="stylesheet" type="text/css" />
-<script language="JavaScript" src="js/displayToc.js" type="text/javascript"></script>
+<script>
+const guid_look = new Map([['CC33530A-8DFA-46E7-8D02-EF6C1AA010EB', 'EA1.htm'],
+['83F96735-FCA0-4453-90B4-7156D421D49D', 'EA3.htm'],
+['F62707EE-4A76-43DB-BBED-9CC591F9136E', 'EA4.htm'],
+['E4465B7B-E1A0-43CB-846A-D4773AED8E66', 'EA5.htm'],
+['87891A57-D401-4153-825F-3E122C1C2583', 'EA6.htm'],
+['CDBE3B69-14AB-4317-9C47-17FE2C267154', 'EA7.htm'],
+['9D04FFC7-1112-4A14-A47B-E6963E61547E', 'EA8.htm'],
+['4931D11E-A184-46DE-B0EA-37EFECEC08BD', 'EA9.htm'],
+['5BB11B5F-DD5A-4750-B3D2-F3EDD1ECDEA3', 'EA10.htm'],
+['A2CCC6DC-AA6F-43EE-963D-F21FE59D4039', 'EA11.htm'],
+['6F98105C-8282-4FC9-B746-5317AF661808', 'EA12.htm'],
+['918FDB86-8032-47AA-9179-32E2242AC14B', 'EA13.htm'],
+['DF3898D8-D408-4513-883C-F2244B8D329C', 'EA14.htm'],
+['FA6ABAC4-ECD0-465E-9044-BC4EAD44226A', 'EA15.htm'],
+['36AF66EB-9225-4BC5-A6CA-2FA14257DEEA', 'EA1/EA16.htm'],
+['5BB11B5F-DD5A-4750-B3D2-F3EDD1ECDEA3', 'EA1/EA18.htm'],
+['B3210DF3-828A-4585-A05B-A5628E6390E7', 'EA1/EA19.htm'],
+['CFB13735-5244-4131-BB33-66128934DB41', 'EA1/EA20.htm'],
+['A5823C66-53E9-4A12-B24C-E7D63763F03E', 'EA1/EA21.htm'],
+['717646F4-55FF-4355-AE83-03588DD83945', 'EA1/EA22.htm'],
+['65B6FE48-9CD0-4540-84D0-54C6859CC201', 'EA1/EA23.htm'],
+['C1874C54-6007-4434-BB70-C539C94F0804', 'EA1/EA24.htm'],
+['D3B4C28E-2831-4C83-BC98-15E8C8B45891', 'EA1/EA25.htm'],
+['8D17021F-3C5A-4FB4-800F-1C2019C30E2D', 'EA1/EA26.htm'],
+['CFB13735-5244-4131-BB33-66128934DB41', 'EA1/EA1/EA27.htm'],
+['519E02B4-F4D7-495F-ACC1-B82E0680B31E', 'EA1/EA1/EA28.htm'],
+['9999A38F-B70B-4274-BB81-5A16EB37D298', 'EA1/EA1/EA29.htm'],
+['1B1FBA82-B717-4B02-AE66-E1142B61E091', 'EA1/EA1/EA30.htm'],
+['31B3A51A-5110-47A3-BAEF-C16326164254', 'EA1/EA1/EA31.htm'],
+['49B680E5-0E20-48EA-8253-4FEEF7CEBB85', 'EA1/EA1/EA32.htm'],
+['A5823C66-53E9-4A12-B24C-E7D63763F03E', 'EA1/EA2/EA33.htm'],
+['01EE4DC2-403A-4982-AD07-A61EEB10017F', 'EA1/EA2/EA34.htm'],
+['BC7D188D-EF51-432D-98F0-DCFFBC7DD15D', 'EA1/EA2/EA35.htm'],
+['5E9DF39C-6000-43D3-9226-88DCD911CCC0', 'EA1/EA2/EA36.htm'],
+['4355144F-8BD4-4B25-94CB-E69C5B98871A', 'EA1/EA2/EA37.htm'],
+['A25E0F1A-B731-4E92-B10F-C75E52119119', 'EA1/EA2/EA38.htm'],
+['717646F4-55FF-4355-AE83-03588DD83945', 'EA1/EA3/EA39.htm'],
+['2C719A1A-9DD9-4D49-B156-FE9A59A7297C', 'EA1/EA3/EA40.htm'],
+['01809F43-C4B8-4445-BF4A-91BFA2C95612', 'EA1/EA3/EA41.htm'],
+['19CCAB3F-C533-4107-9E55-E64EF97E7204', 'EA1/EA3/EA42.htm'],
+['65B6FE48-9CD0-4540-84D0-54C6859CC201', 'EA1/EA4/EA43.htm'],
+['AD0AB7BA-9057-4189-A00C-62FE78C9D5AE', 'EA1/EA4/EA44.htm'],
+['4C158BCC-CD38-45A7-9FF6-FDED6FDBC52F', 'EA1/EA4/EA45.htm'],
+['8486EBB2-0EEA-436D-A342-48C3BC633C4F', 'EA1/EA4/EA46.htm'],
+['86293EBE-E7A8-420E-918D-71348D4A2179', 'EA1/EA4/EA47.htm'],
+['580E3C77-C562-473C-BBD2-D6585D8DD756', 'EA1/EA4/EA48.htm'],
+['CDF218F4-473F-4EFB-BF89-FFA69FBEB182', 'EA1/EA4/EA49.htm'],
+['50BDB632-68AD-4FEE-A070-2BFE8F8CB099', 'EA1/EA4/EA50.htm'],
+['9D476FCC-FC0A-4A0C-BCBF-E471CEB6B2B3', 'EA1/EA4/EA51.htm'],
+['4A4D2B0E-B0EE-425A-ABDE-41C38E9D1124', 'EA1/EA4/EA52.htm'],
+['01C4D60E-1558-4DE7-9575-728A916C7F27', 'EA1/EA4/EA53.htm'],
+['16E637F0-B3DD-4413-9C65-E245232818AD', 'EA1/EA4/EA54.htm'],
+['8AAF2D23-1131-42A5-89A7-087AB2944800', 'EA1/EA4/EA55.htm'],
+['8D17021F-3C5A-4FB4-800F-1C2019C30E2D', 'EA1/EA5/EA56.htm'],
+['18125799-A9C0-4E9D-B88E-C02A31FA9163', 'EA1/EA5/EA57.htm'],
+['09ACD865-46B3-4EA8-A5A9-5D8F4AF58CF6', 'EA1/EA5/EA58.htm'],
+['F67994D2-8F28-40C3-AB94-56CBB3C33B7E', 'EA1/EA5/EA59.htm'],
+['045541C2-0CC6-4ED9-B36B-9A432B2E67EC', 'EA1/EA5/EA60.htm'],
+['FA078449-0B55-43FD-85F0-BC2273EB6B8F', 'EA1/EA5/EA61.htm'],
+['62F6C2C3-7E2A-47D8-8BDF-B2EE2A30426E', 'EA2/EA62.htm'],
+['A2CCC6DC-AA6F-43EE-963D-F21FE59D4039', 'EA2/EA64.htm'],
+['768A73D1-CC4A-4BD5-BD74-7C35BA184B0E', 'EA2/EA65.htm'],
+['28178970-EA02-48A5-914E-FFE695488281', 'EA2/EA66.htm'],
+['88D8C631-7639-49F0-844E-F0DDA13CF044', 'EA2/EA67.htm'],
+['3D4AD125-19DF-463E-8E2B-8880704E84E2', 'EA2/EA68.htm'],
+['879D67AB-7CEB-4962-8331-7D046F2EB2B4', 'EA2/EA69.htm'],
+['08776BAB-E60F-47EF-9174-081FE64F6D71', 'EA2/EA70.htm'],
+['C487BDE5-FA3A-4156-B3C6-33C9E7153EBA', 'EA2/EA71.htm'],
+['87DFD2A8-168C-41D6-ABBC-1355C8C6757F', 'EA2/EA72.htm'],
+['3D4AD125-19DF-463E-8E2B-8880704E84E2', 'EA2/EA1/EA73.htm'],
+['D2A4C9B8-BDD7-427C-81A6-1411C0F7B280', 'EA2/EA1/EA74.htm'],
+['4EA8D521-CA96-4EA3-90A3-D303CC0AACA8', 'EA2/EA1/EA75.htm'],
+['3D7503E7-23C4-4846-A45A-D63C8A3B4CC5', 'EA2/EA1/EA76.htm'],
+['28C2E2B1-65B4-47FD-8903-FE3449030F55', 'EA2/EA1/EA77.htm'],
+['879D67AB-7CEB-4962-8331-7D046F2EB2B4', 'EA2/EA2/EA78.htm'],
+['E20F665C-1292-4B0B-98FA-C4339CC86620', 'EA2/EA2/EA79.htm'],
+['08776BAB-E60F-47EF-9174-081FE64F6D71', 'EA2/EA3/EA80.htm'],
+['07E61B1B-8832-4B8A-A195-03143D401995', 'EA2/EA3/EA81.htm'],
+['DAA1751E-B997-47BE-9076-48B04D2051EC', 'EA2/EA3/EA82.htm'],
+['D92DEB09-7102-4A53-B622-F98C50736668', 'EA2/EA3/EA83.htm'],
+['61F9DAAD-6D92-4838-91FA-32D72DE2C4F4', 'EA2/EA3/EA84.htm'],
+['DF5BDDBC-E821-466C-AB68-27AD7E5038CF', 'EA2/EA3/EA85.htm'],
+['A8DDF368-5294-4B6D-9BA7-4AD1436DC838', 'EA2/EA3/EA86.htm'],
+['D53E8616-4F42-4B0D-9A5B-35DB6ABA28D3', 'EA2/EA3/EA87.htm'],
+['BB8C1624-E80F-46F9-9D4E-137043169ED0', 'EA2/EA3/EA88.htm'],
+['3F75E697-74ED-4D4F-852D-4F9B4927C399', 'EA2/EA3/EA89.htm'],
+['B966942A-D11B-46F8-8082-B2CAAAF82E75', 'EA2/EA3/EA90.htm'],
+['043B9875-7D84-4FA5-A611-0D64FC6EB57D', 'EA2/EA3/EA91.htm'],
+['80647EEC-C009-432C-9451-A433608E8B8B', 'EA2/EA3/EA92.htm'],
+['49E07AE1-EBBA-436A-8648-93FBA8754532', 'EA2/EA3/EA93.htm'],
+['FE598186-5858-44B4-8B51-2BE7D8C848BD', 'EA2/EA3/EA94.htm'],
+['82BB9579-0354-4FA1-91CC-A01F31ED41DF', 'EA2/EA3/EA95.htm'],
+['37D92C6B-5199-4A9D-8837-0740EF3B1A41', 'EA2/EA3/EA96.htm'],
+['867F3DE7-6F39-43BF-A1C0-A31185A4482C', 'EA2/EA3/EA97.htm'],
+['795AD710-6C2B-413D-82BC-EEAFA1766EDB', 'EA2/EA3/EA98.htm'],
+['7BA75E54-A1DD-420F-B358-F2B59B2985F5', 'EA2/EA3/EA99.htm'],
+['601B22D4-F573-4E35-A0DC-8F110BD53E3E', 'EA2/EA3/EA100.htm'],
+['6442F7CD-399A-445C-B5F5-DDF9E7793EEF', 'EA2/EA3/EA101.htm'],
+['FE7E453C-D410-48C5-941E-318C5EA83B2F', 'EA2/EA3/EA102.htm'],
+['1F4A95C9-FA17-476B-9132-B64B2502702F', 'EA2/EA3/EA103.htm'],
+['E7A8112B-9F75-4601-B108-9964DC50FED0', 'EA2/EA3/EA104.htm'],
+['CB5D3CF4-3486-4CED-AFF0-E84DF5C64C48', 'EA2/EA3/EA105.htm'],
+['E0D893E9-3F96-49C4-9FBF-48591C8B77A4', 'EA2/EA3/EA106.htm'],
+['355BC2B3-2112-47FB-8CE0-D3677715B5D8', 'EA2/EA3/EA107.htm'],
+['A7C5E4D2-4C96-488D-9021-DE2192FDD1E3', 'EA2/EA3/EA108.htm'],
+['2EA36102-8FB4-41E5-8384-277130A0855B', 'EA2/EA3/EA109.htm'],
+['A0A7EF5B-0F75-48AC-9FD3-C6DB2915A800', 'EA2/EA3/EA110.htm'],
+['04FE4FC1-5A04-424C-8D06-96D805AA1556', 'EA2/EA3/EA111.htm'],
+['2D8D8356-1D5E-42B7-B9BB-BCDFD97F2C95', 'EA2/EA3/EA112.htm'],
+['05F09947-F13A-4AE9-B944-9672D5872516', 'EA2/EA3/EA113.htm'],
+['B7AFE5CB-2A70-48CE-9ACC-91B5CA776A2B', 'EA2/EA3/EA114.htm'],
+['6F33D268-087B-4626-946B-36BE3CE60116', 'EA2/EA3/EA115.htm'],
+['616DB36E-4251-4B12-BD54-58105CB20637', 'EA2/EA3/EA116.htm'],
+['89A547AC-1519-4A98-8C0B-35A678FA7586', 'EA2/EA3/EA117.htm'],
+['863DE7F6-BB4C-4BF5-A4F1-2351D0273C65', 'EA2/EA3/EA118.htm'],
+['89C549FA-9351-4A9F-B8CB-02E00D983144', 'EA2/EA3/EA119.htm'],
+['4A25B12D-81DB-4E1A-9F7A-61545373A048', 'EA2/EA3/EA120.htm'],
+['524E697F-9C46-42BB-B366-74B380D7F591', 'EA2/EA3/EA121.htm'],
+['17E98F9A-7E4B-4E4C-9D4E-61F335A5A284', 'EA2/EA3/EA122.htm'],
+['28B4DEC2-D621-4B4E-AF18-B8E34B28E0A2', 'EA2/EA3/EA123.htm'],
+['9105DF71-6B49-44E7-B2E3-4EFC9779D6BB', 'EA2/EA3/EA124.htm'],
+['A4486CEE-A577-4037-BEAA-01463BFDDF78', 'EA2/EA3/EA125.htm'],
+['648DBA1F-EA00-43E6-B28A-C5E117297931', 'EA2/EA3/EA126.htm'],
+['D58832E7-6942-4A0F-A4C3-89BC3C2C25B5', 'EA2/EA3/EA127.htm'],
+['AAD2DC61-766E-46DE-B2D7-C07D8651F447', 'EA2/EA3/EA128.htm'],
+['0CDB1EF8-4915-400E-8562-F5460060C37F', 'EA2/EA3/EA129.htm'],
+['950BA35B-7663-4E1F-91FC-5EA5A52C2934', 'EA2/EA3/EA130.htm'],
+['C487BDE5-FA3A-4156-B3C6-33C9E7153EBA', 'EA2/EA4/EA131.htm'],
+['0C0582A3-C5C5-4EA0-8504-DE328D35C702', 'EA2/EA4/EA132.htm'],
+['91C7B206-E453-4AB9-B0B6-D08FDE6075D8', 'EA2/EA4/EA133.htm'],
+['1D8C33F8-CF43-44A6-8E15-D5CC49B29943', 'EA2/EA4/EA134.htm'],
+['35C53FD1-0C8A-49DC-85AE-E2D72F886A54', 'EA2/EA4/EA135.htm'],
+['12F2142B-1179-455B-9F44-335FE9CBB4D2', 'EA2/EA4/EA136.htm'],
+['45963755-0898-4846-8129-F2724C86B673', 'EA2/EA4/EA137.htm'],
+['3577F755-7777-4B9E-AAF8-F0A7532ACE4A', 'EA2/EA4/EA138.htm'],
+['F49ACE9E-16BD-430E-AAFF-5A858FC334B9', 'EA2/EA4/EA139.htm'],
+['395DED00-A80C-418C-A674-B65B7434A6E0', 'EA2/EA4/EA140.htm'],
+['3D931997-C649-47CD-B6F6-261C8137D773', 'EA2/EA4/EA141.htm'],
+['87DFD2A8-168C-41D6-ABBC-1355C8C6757F', 'EA2/EA5/EA142.htm'],
+['4BBDECD9-7CB6-4269-9AA6-DE1A948C9995', 'EA2/EA5/EA143.htm'],
+['DEC15748-EB48-4DCE-BABA-FDB1698EC9A9', 'EA2/EA5/EA144.htm'],
+['E2280DC8-3870-4BCA-B9D9-0B0F048FF2BE', 'EA2/EA5/EA145.htm'],
+['6902FEFA-51CE-4958-A449-99F7F9CA5213', 'EA2/EA5/EA146.htm'],
+['5EBBFBEF-A20E-41B1-9B2D-87761D987CC5', 'EA3/EA147.htm'],
+['6F98105C-8282-4FC9-B746-5317AF661808', 'EA3/EA149.htm'],
+['0DB136F1-4A28-49C4-83CE-26BA1B71D675', 'EA3/EA150.htm'],
+['7548A7CA-47C0-40E6-8EA8-DE18501B7B12', 'EA3/EA151.htm'],
+['D756E993-3CF4-49FD-BBF5-E6670E55F179', 'EA3/EA152.htm'],
+['7548A7CA-47C0-40E6-8EA8-DE18501B7B12', 'EA3/EA1/EA153.htm'],
+['741A6BF3-3785-4285-B769-6E5BA4860A45', 'EA3/EA1/EA154.htm'],
+['18BED502-4259-4737-9DD1-6B52EBF5BA0F', 'EA3/EA1/EA155.htm'],
+['9A594D51-2CA2-4048-B043-981F4DF70F2D', 'EA3/EA1/EA156.htm'],
+['0BDE8A5E-CC0E-4FA9-89DD-1DCD42A5AA0B', 'EA3/EA1/EA157.htm'],
+['EB8F2E83-0D00-458A-8C55-0EB4EC40B71C', 'EA3/EA1/EA158.htm'],
+['D756E993-3CF4-49FD-BBF5-E6670E55F179', 'EA3/EA2/EA159.htm'],
+['BBDE56DE-DE8B-4A1D-AC6F-9E35202ED36D', 'EA3/EA2/EA160.htm'],
+['2EE5FD1F-AC4F-40B2-9C2B-52A2CE6A979C', 'EA3/EA2/EA161.htm'],
+['1EC60CD8-B204-450D-9238-47BEC17A4785', 'EA3/EA2/EA162.htm'],
+['06C05CA6-B06C-4CA9-AE2B-B93C77D2BECA', 'EA3/EA2/EA163.htm'],
+['98435A5F-0A74-4CEA-BA8E-AE02988208EE', 'EA3/EA2/EA164.htm'],
+['DB0FFB19-1B79-4DBD-9F2B-5B224D345C66', 'EA3/EA2/EA165.htm'],
+['918FDB86-8032-47AA-9179-32E2242AC14B', 'EA4/EA166.htm'],
+['D7F57B7E-40DC-49D3-B8FC-936DAD0D0DF2', 'EA5/EA167.htm'],
+['DF3898D8-D408-4513-883C-F2244B8D329C', 'EA5/EA169.htm'],
+['61D5A1D7-B022-4F76-A82B-E651D622BEE0', 'EA5/EA170.htm'],
+['6D0CECC3-63E3-4DD5-ABC3-493985CAE21B', 'EA5/EA171.htm'],
+['70704951-A30B-42A0-8896-A534EF750E0A', 'EA5/EA172.htm'],
+['5B9F24BE-3ED2-466F-A1C3-2B339065E177', 'EA5/EA173.htm'],
+['C4D62817-B564-4FBD-BD40-E5AAAABB07FC', 'EA5/EA174.htm'],
+['7906ADAE-828B-4CBC-B1CA-A9D1FE27B8DD', 'EA5/EA175.htm'],
+['5A8740A1-F800-4B3B-8CFE-7F11F4156620', 'EA5/EA176.htm'],
+['E23CDCF3-32C8-47F0-B567-508B9B97B399', 'EA5/EA177.htm'],
+['58364AC4-6F20-4129-8FC7-D428DB8B8F4E', 'EA5/EA178.htm'],
+['0175F026-9952-4588-ACAF-6DA60158B79A', 'EA5/EA1/EA179.htm'],
+['C4D62817-B564-4FBD-BD40-E5AAAABB07FC', 'EA5/EA1/EA181.htm'],
+['0185B279-5D3B-4E62-8F32-B14B61417EF5', 'EA5/EA1/EA182.htm'],
+['32522428-36C3-4E99-971C-5375A3EADE17', 'EA5/EA1/EA183.htm'],
+['471B1D1F-484D-440F-8DE4-7B49770779F3', 'EA5/EA1/EA184.htm'],
+['D6E0F971-086C-424B-ACEA-88D9656DD99A', 'EA5/EA1/EA185.htm'],
+['0185B279-5D3B-4E62-8F32-B14B61417EF5', 'EA5/EA1/EA1/EA186.htm'],
+['A6EAA190-A9C2-400E-B625-2608F1B7CA01', 'EA5/EA1/EA1/EA187.htm'],
+['1235A3AD-9772-47A0-A8E7-96CD366C65C9', 'EA5/EA1/EA1/EA188.htm'],
+['4D68A761-475F-419B-A694-674A57AD7A68', 'EA5/EA1/EA1/EA189.htm'],
+['5D80C3AA-191A-4BE9-AE0B-0359B3961855', 'EA5/EA1/EA1/EA190.htm'],
+['809F8DCF-09A1-4A35-8E23-582A648708D7', 'EA5/EA1/EA1/EA191.htm'],
+['7D2FE5AA-F34C-4B2E-891C-12CDB95CB854', 'EA5/EA1/EA1/EA192.htm'],
+['B91A8A84-862E-4E4E-901F-49CED3D4A47F', 'EA5/EA1/EA1/EA193.htm'],
+['6E63A273-E997-4476-85F0-B1B3F0D41948', 'EA5/EA1/EA1/EA194.htm'],
+['E4F0051F-C913-4413-8AF6-46712CCE0E29', 'EA5/EA1/EA1/EA195.htm'],
+['C6B07CCB-F05A-4574-88E8-2D721FA1CC0F', 'EA5/EA1/EA1/EA196.htm'],
+['9AF2F00D-7E33-4491-84C7-D4B0E1E62235', 'EA5/EA1/EA1/EA197.htm'],
+['7F23CFE4-500A-4271-9B84-3CA47D3D0129', 'EA5/EA1/EA1/EA198.htm'],
+['E45FA344-8B3C-4004-A1C5-10DB1D60987A', 'EA5/EA1/EA1/EA199.htm'],
+['49B7A4CB-3650-45AA-AC5A-DA84600747B5', 'EA5/EA1/EA1/EA200.htm'],
+['70D2E98B-A46D-41EF-918C-821C6149B02E', 'EA5/EA1/EA1/EA201.htm'],
+['B8249934-8794-40BC-9887-8DCADA8ADD60', 'EA5/EA2/EA202.htm'],
+['5A8740A1-F800-4B3B-8CFE-7F11F4156620', 'EA5/EA2/EA204.htm'],
+['DDC9CD81-5DBD-4E35-BEC6-ED0E3518F58C', 'EA5/EA2/EA205.htm'],
+['6B723CBD-DC06-49CD-83F3-3FBB735C17FE', 'EA5/EA2/EA206.htm'],
+['AB28222B-ADAB-4916-92DF-6299807DACA6', 'EA5/EA2/EA207.htm'],
+['F921B7A1-2E94-4802-B5A0-97FB0EDF8375', 'EA5/EA2/EA208.htm'],
+['6B723CBD-DC06-49CD-83F3-3FBB735C17FE', 'EA5/EA2/EA1/EA209.htm'],
+['0D6C06EB-41CC-48C1-86E9-5288373F3611', 'EA5/EA2/EA1/EA210.htm'],
+['30A34EAE-AB95-4169-900E-BCE47DE46558', 'EA5/EA2/EA1/EA211.htm'],
+['BFBE5607-B5E9-467C-B966-ED0BBD6200CF', 'EA5/EA2/EA1/EA212.htm'],
+['51BC8E5A-6E2C-4209-8131-7AF457A731E9', 'EA5/EA2/EA1/EA213.htm'],
+['F6C45D87-E8EA-4ADA-B52C-10DF47119321', 'EA5/EA2/EA1/EA214.htm'],
+['325F0B4B-A215-4BE2-958B-FE3ABFFDEF1A', 'EA5/EA2/EA1/EA215.htm'],
+['72D6074D-100F-45CC-967D-B8D5A4B6F924', 'EA5/EA2/EA1/EA216.htm'],
+['8C585B95-F1E0-488D-8095-B8C9D04ADE68', 'EA5/EA2/EA1/EA217.htm'],
+['6B336EE1-25C0-4087-9D25-CE72AF9D5730', 'EA5/EA2/EA1/EA218.htm'],
+['3C58CE28-9384-47B8-AC17-414A0B505D90', 'EA5/EA2/EA1/EA219.htm'],
+['7615DF18-80CE-44F4-A8A0-6AC788682D66', 'EA5/EA2/EA1/EA220.htm'],
+['17EBAC7E-E847-47D1-9515-E747B015C202', 'EA5/EA2/EA1/EA221.htm'],
+['77E39EED-5D44-4837-86A7-1D4FE22A5348', 'EA5/EA2/EA1/EA222.htm'],
+['A7F694D0-3401-4F76-937D-CBB2750B11BF', 'EA5/EA2/EA1/EA223.htm'],
+['0F014357-0944-4AFD-BF33-3432540FEC30', 'EA5/EA2/EA1/EA224.htm'],
+['9F4D540F-34D7-418E-B561-42E8C5D180F4', 'EA5/EA2/EA1/EA225.htm'],
+['0B142C7E-8FB3-4B74-B4FA-E7FE2D238380', 'EA5/EA2/EA1/EA226.htm'],
+['2D10B3DF-27FC-434A-B27C-1DBEC025DFA4', 'EA5/EA2/EA1/EA227.htm'],
+['24A1FBF5-07C2-46C6-BA46-73BC353DA4ED', 'EA5/EA2/EA1/EA228.htm'],
+['0FEED0F3-BE76-4071-A61B-9421EE88B5C0', 'EA5/EA3/EA229.htm'],
+['58364AC4-6F20-4129-8FC7-D428DB8B8F4E', 'EA5/EA3/EA231.htm'],
+['68CED764-B000-413B-A6DF-036D39A7B242', 'EA5/EA3/EA232.htm'],
+['73D6DA7C-4CFA-4813-878C-19E8CF8E62B9', 'EA5/EA3/EA233.htm'],
+['EF63DC3B-6BD1-4797-981E-C15C14ADAEEB', 'EA5/EA3/EA234.htm'],
+['7F011F05-0E99-41CA-B3FB-AD27993F8E14', 'EA5/EA3/EA235.htm'],
+['7F011F05-0E99-41CA-B3FB-AD27993F8E14', 'EA5/EA3/EA1/EA236.htm'],
+['1CBCF3DF-D807-4382-B235-54BC9911CEC5', 'EA5/EA3/EA1/EA237.htm'],
+['AFAD8CA3-653B-40C4-8DA4-3FA1210DC161', 'EA5/EA3/EA1/EA238.htm'],
+['37633241-ECB4-4E36-B8CE-1A367B786FA9', 'EA5/EA3/EA1/EA239.htm'],
+['F3FAC284-6AB7-4DFF-91BF-30E676B4F449', 'EA5/EA3/EA1/EA240.htm'],
+['511629E8-2B64-44BE-AD7E-5B0D536AF7E0', 'EA5/EA3/EA1/EA241.htm'],
+['EEEAD142-5CAF-4C12-BD1F-F23BAC12B31F', 'EA5/EA3/EA1/EA242.htm'],
+['857D8A5A-25DE-4A3B-B540-111B66E86B0A', 'EA5/EA3/EA1/EA243.htm'],
+['AD70904D-2757-48D6-8694-EB8A81FF4B5C', 'EA5/EA3/EA1/EA244.htm'],
+['52A1D0E9-18F4-447F-9FAE-D82C183E31AC', 'EA5/EA3/EA1/EA245.htm'],
+['1C797A58-9B2E-4A26-91AA-118A6AD4BE65', 'EA5/EA3/EA1/EA246.htm'],
+['7B02B177-D0AC-4386-992A-752FF35B1A89', 'EA5/EA3/EA1/EA247.htm'],
+['EBF2FCE9-7013-4B62-8356-BF4F38EFC1DD', 'EA5/EA3/EA1/EA248.htm'],
+['C786EAA8-695A-4DB8-8B91-A185468C996F', 'EA5/EA3/EA1/EA249.htm'],
+['16945DA1-4A45-4E1D-8799-0F90BD77D64F', 'EA6/EA250.htm'],
+['FA6ABAC4-ECD0-465E-9044-BC4EAD44226A', 'EA6/EA252.htm'],
+['1320AAC6-8CEF-4CF4-980C-9DFB256ED4E7', 'EA6/EA253.htm'],
+['6613CB3D-B2B1-4CEF-B5D9-43CBB8A27AB2', 'EA6/EA254.htm'],
+['59704189-CB78-4455-AF14-87411286BB13', 'EA6/EA255.htm'],
+['F50ADA61-54C9-4BC6-99F6-E6FADD5AED3F', 'EA6/EA256.htm'],
+['321824CC-69DD-4714-800E-7526E7E8CCAC', 'EA6/EA257.htm'],
+['57522110-54AA-43D6-8F37-AD43F6D68D72', 'EA6/EA258.htm'],
+['0396DED8-928E-450D-BC2B-16B42FC84087', 'EA6/EA259.htm'],
+['E1490E31-8101-47D1-9D77-AF97D60AFFAD', 'EA6/EA260.htm'],
+['5615A50E-7D95-4B83-A0CB-74A7443E4075', 'EA6/EA261.htm'],
+['F50ADA61-54C9-4BC6-99F6-E6FADD5AED3F', 'EA6/EA1/EA262.htm'],
+['F6AD5280-746D-47A2-97EB-132D8A0FF4AC', 'EA6/EA1/EA263.htm'],
+['A226A946-1E9C-495C-8CA7-6364661A18E3', 'EA6/EA1/EA264.htm'],
+['F41152B9-9434-400B-9AD5-58B75CA06FDB', 'EA6/EA1/EA265.htm'],
+['428C2621-12D1-438C-BD2B-28EA4B67CE7B', 'EA6/EA1/EA266.htm'],
+['7E2606A4-065C-4A0F-B00A-1DDB94A7EBFA', 'EA6/EA1/EA267.htm'],
+['368086E6-09E5-43C3-9327-AC7600477E13', 'EA6/EA1/EA268.htm'],
+['D9F3364C-1A82-4D90-8D7F-EF57FA4E60B6', 'EA6/EA1/EA269.htm'],
+['34E25076-A094-4227-8876-80E7D6202806', 'EA6/EA1/EA270.htm'],
+['E66F6793-E261-4862-AE44-1A4CBD4556E8', 'EA6/EA1/EA271.htm'],
+['F59E6F9B-6647-4389-A948-4A958BBDDF90', 'EA6/EA1/EA272.htm'],
+['F92A1B2F-89C6-4E57-A2BD-8960465435CF', 'EA6/EA1/EA273.htm'],
+['10691DD9-32C2-4EF5-B89F-D12BE7A3F183', 'EA6/EA1/EA274.htm'],
+['70C7A260-AA12-4E1D-B3C4-91D01E4B377A', 'EA6/EA1/EA275.htm'],
+['A8B262D2-DDDB-4234-8D31-2B6803F4AF68', 'EA6/EA1/EA276.htm'],
+['A354892E-9CB6-4AE0-A468-51CDD570B10F', 'EA6/EA1/EA277.htm'],
+['ED0BE400-2DC9-4B70-9244-686D28656E99', 'EA6/EA1/EA278.htm'],
+['A873CB1D-4170-4716-91F1-41D6366B835C', 'EA6/EA1/EA279.htm'],
+['57522110-54AA-43D6-8F37-AD43F6D68D72', 'EA6/EA2/EA280.htm'],
+['E658AAFB-2923-41E3-BFA8-0B79A2B57C3D', 'EA6/EA2/EA281.htm'],
+['C3C38386-12EB-44C2-8976-75E3D86C7AD2', 'EA6/EA2/EA282.htm'],
+['80021436-2426-48B8-924C-F76DC5D338BC', 'EA6/EA2/EA283.htm'],
+['838FF400-30C2-465B-A815-907FD87D213B', 'EA6/EA2/EA284.htm'],
+['44D1CCEA-5154-46A4-804A-E19E0A79FC2B', 'EA6/EA2/EA285.htm'],
+['931FCB16-30EE-46D1-A710-1551EE357C47', 'EA6/EA2/EA286.htm'],
+['82FF01BC-5818-40E7-A1AC-5BA1B47FA5DF', 'EA6/EA2/EA287.htm'],
+['7D17E92C-40B9-4747-8B9D-5D52B942D18F', 'EA6/EA2/EA288.htm'],
+]);
+
+		function switchProjectProperties()
+		{
+			if (document.getElementById("proj00").style.display == "none")
+			{
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			}
+			else
+			{
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+		}
+
+		function switchAdvancedProperties()
+		{
+
+			if (document.getElementById("adv00").style.display == "none")
+			{
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			}
+			else
+			{
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+
+		function initPage()
+        {
+			const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            const guidlink = urlParams.get('guid');
+
+            if (guidlink != null)
+            {
+                var link = guidlink.toUpperCase();
+                var pageredir = guid_look.get(link);
+
+                if (pageredir != null)
+				{
+                    window.location.replace("EARoot/" + pageredir);
+                    return;
+                }
+            }
+
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++)
+			{
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+</script>
+<style>
+
+</style>
 </head>
-<body onload="initLoad(this,'toc.htm','./EARoot/EA1.htm')" onresize="resizePage()">
-<div class="IndexTitle">
-	National Body Reference Architecture
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> National Body Reference Architecture </h1>
+			<img class="header_image" src="images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p></p>
+		</div>
+		
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<li><img src="images/4.png" alt="Package"/> <a href="./EARoot/EA1/EA18.htm">NB Motivational Layer</a></li>
+<li><img src="images/4.png" alt="Package"/> <a href="./EARoot/EA2/EA64.htm">NB Functional View</a></li>
+<li><img src="images/4.png" alt="Package"/> <a href="./EARoot/EA3/EA149.htm">NB Organisational View</a></li>
+<li><img src="images/4.png" alt="Package"/> <a href="./EARoot/EA4/EA166.htm">NB Physical View</a></li>
+<li><img src="images/4.png" alt="Package"/> <a href="./EARoot/EA5/EA169.htm">NB Communication View</a></li>
+<li><img src="images/4.png" alt="Package"/> <a href="./EARoot/EA6/EA252.htm">Supplements</a></li>
+<li><img src="images/175.png" alt="Diagram"/> <a href="./EARoot/EA1.htm">National Body Landing Page</a></li>
+</ul>
+
+					</td>
+					<td class="contentcell">	
+						<div class="welcome_message">
+						<h2>Welcome to your model</h2>
+						<p>To get started navigate through the model via the index on the left</p> 
+						</div>
+						<div class="PageBody">
+	<div class="diagram_image"> 
+<img src="./EARoot/EA2.png" usemap="#EA2" border="0" />
+
+<MAP NAME="EA2">
+<area shape="rect" coords="364,487,495,532" href="./EARoot/EA6/EA261.htm" target="_self">
+<area shape="rect" coords="362,616,497,671" href="./EARoot/EA6/EA260.htm" target="_self">
+<area shape="rect" coords="364,550,495,597" href="./EARoot/EA6/EA259.htm" target="_self">
+<area shape="rect" coords="196,588,332,671" href="./EARoot/EA5/EA167.htm" target="_self">
+<area shape="rect" coords="196,487,333,576" href="./EARoot/EA3/EA147.htm" target="_self">
+<area shape="rect" coords="19,588,170,671" href="./EARoot/EA2/EA62.htm" target="_self">
+<area shape="rect" coords="19,487,170,576" href="./EARoot/EA1/EA16.htm" target="_self">
+<area shape="rect" coords="535,479,1007,679" href="./EARoot/EA6/EA253.htm" target="_self">
+<area shape="rect" coords="10,10,1030,462" href="./EARoot/EA4.htm" target="_self">
+</MAP>
+ </div>
+	<div class="ObjectTitle">National Body Landing Page : FRAME_Diagram diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">06.04.2020 09:35:37</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">10.02.2025 08:42:03</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="./images//plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">BWI</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="./images//plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{CC33530A-8DFA-46e7-8D02-EF6C1AA010EB}</td>
+		</tr>
+	</table>
+	
 </div>
-<div class="IndexHeader" id="IndexHeader">
-	<img src="images/ea.gif" align="right" alt="Enterprise Architect" />
+
+
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		
+
 </div>
-<noscript>
-	<div class="NoScript">
-		It appears that you may have Javascript disabled.
-	</div>
-</noscript>
 </body>
 </html>

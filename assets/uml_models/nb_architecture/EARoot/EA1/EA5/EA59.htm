@@ -2,51 +2,106 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Data and Service provider</title>
+<title>Member State</title>
 <link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../js/displayToc.js" type="text/javascript"></script>
 <script>
-function initPage(src) {	
-	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
-		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
-	else
-		parent.initPage(src);
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
 }
 
-function nameClassifier(name, separator)
-{
-  var str = name;
-  var classifierName;
-  var node = document.getElementById('name_classifier');
-  if(node != null)
-  {
-    classifierName = node.innerHTML;
-  }
-  if(classifierName != "")
-  {
-   str += separator + classifierName;
-  }
-  
-  return str;
-}
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
 </script>
+<style>
+
+</style>
 </head>
-<body onload="initPage(this);" class="Content">
-<div class="pageHeader"></div>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> Member State </h1>
+			<!-- <img class="header_image" src="../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../EA3.htm">National Body Reference Architecture</a> / <a href="../EA18.htm">NB Motivational Layer</a> / <a href="EA56.htm">Stakeholders</a> / <a href="EA59.htm">Member State</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<a href="EA56.htm">Stakeholders</a></ul>
+
+					</td>
+					<td class="contentcell"><div class="pageHeader"></div>
 <div class="PageBody">
-	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("Data and Service provider", " : "))</script>  : Public  &lt;&lt;FRAME_Stakeholder&gt;&gt; FRAME_Stakeholder</span>
-	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+	<span class="ObjectTitle">Member State  : Public  &lt;&lt;FRAME_Stakeholder&gt;&gt; FRAME_Stakeholder</span>
+	<table border="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">16.11.2023 11:02:58</td>
+			<td width="85%" class="ObjectDetailsValue">16.11.2023 09:53:59</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">04.12.2023 11:41:34</td>
+			<td class="ObjectDetailsValue">17.04.2025 15:46:22</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
-			<td class="ObjectDetailsTopic"><img src="../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
 			<td class="ObjectDetailsValue"></td>
 		</tr>
 		<tr id="proj00" style="display: none;">
@@ -78,33 +133,33 @@ function nameClassifier(name, separator)
 			<td class="ObjectDetailsValue"></td>
 		</tr>
 		<tr id="proj05" style="display: none;">
-			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Multiplicity:</td>
+			<td class="ObjectDetailsTopic" >Multiplicity:</td>
 			<td class="ObjectDetailsValue"></td>
 		</tr>
 		<tr>
-			<td class="ObjectDetailsTopic"><img src="../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
 			<td class="ObjectDetailsValue"></td>
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{18125799-A9C0-4e9d-B88E-C02A31FA9163}</td>
+			<td class="ObjectDetailsValue">{F67994D2-8F28-40c3-AB94-56CBB3C33B7E}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../EA17.htm">00_NB_Motivational View</a></td>
+			<td class="ObjectDetailsValue"><a href="../EA16.htm">00_NB_Motivational View</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">National and international data and service provider who should provide a self declaration according to the obligation to the delegated acts.&lt;br/&gt;&lt;br/&gt;886/2013 (SRTI) (article 9)&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;b&gt;Public and private road operators, service providers and broadcasters&lt;/b&gt; dedicated to traffic information shall provide the designated national bodies &#8230; submit a declaration of compliance &lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;887/2013 (Truck parking) (article 8)&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&#8230; national body competent to assess whether the requirements &#8230; are fulfilled by &lt;b&gt;service providers, parking operators and road operators&lt;/b&gt;&lt;/li&gt;&lt;li&gt;All services providers shall submit a declaration&#8230;.&lt;/li&gt;&lt;li&gt;&#8230; inspect the correctness of the declarations of a number of &lt;b&gt;public and private service providers and parking operators&lt;/b&gt;,&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;2015/962 (old RTTI) (article 11)&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&#8216;service provider&#8217; means any &lt;b&gt;public or private provider of a real-time traffic information service&lt;/b&gt;, excluding a mere conveyer of information, to users and end-users;&lt;/li&gt;&lt;li&gt;Member States shall assess&#8230; by the &lt;b&gt;road authorities, road operators, digital map producers and service providers&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;b&gt;2022/670 (new RTTI) (article 12)&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;Member States shall assess &#8230;. are complied with by the &lt;b&gt;data holders and data users&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;2017/1926 (MMTIS) (article 9)&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;Member States shall assess &#8230; by the &lt;b&gt;transport authorities, transport operators, transport on demand service providers and travel information service providers&lt;/b&gt;.&lt;/li&gt;&lt;li&gt;Member States may request from the &lt;b&gt;transport authorities, transport operators, infrastructure managers, transport on demand service providers or travel information service providers&lt;/b&gt;&#8230;&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">Each Member State has to fulfil the requirement of the ITS Directive and the related Delegated Regulations. Therefore, they have to setup a national body or announce a competent authority (see 1.2.6.1.1). In addition, the Member State has to report status and progress to the European Commission. &lt;br/&gt;&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
-			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
-			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
-			<li onClick="parent.toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
-			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
+			<li onClick="parent != null ? parent.toggleItem('AssociationsTo') : toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="parent != null ? parent.toggleItem('AssociationsFrom') : toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
+			<li onClick="parent != null ? parent.toggleItem('CustomProperties') : toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
+			<li onClick="parent != null ? parent.toggleItem('Links') : toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
 		<div class="ItemBody" id="AssociationsToTable">
-			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+			<table class="Table ea_table">
 				<tr>
 					<td width="40%" class="TableHeading">Element</td>
 					<td width="30%" class="TableHeading">Source Role</td>
@@ -112,7 +167,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA2/EA38.htm">«FRAME_Business_Expectation» Obligations and Interactions</a><br />
+						<a href="../EA2/EA35.htm">«FRAME_Business_Expectation» Guideline for a harmonised National Body setup</a><br />
 						FRAME_Business_Expectation «has» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -126,8 +181,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink25" onclick="parent.toggleDiv('detailsDIVLink25','DetailsImageLink25')" />Details:
-							<div id="detailsDIVLink25" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink32" /></button>Details:
+							<div id="detailsDIVLink32" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -137,7 +192,7 @@ function nameClassifier(name, separator)
 			</table>
 		</div>
 		<div class="ItemBody" id="AssociationsFromTable">
-			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+			<table class="Table ea_table">
 				<tr>
 					<td width="40%" class="TableHeading">Element</td>
 					<td width="30%" class="TableHeading">Source Role</td>
@@ -145,7 +200,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA3/EA49.htm">«FRAME_ITS_Service_Added_Value» Increased findability and visibility of data and services EU-wide</a><br />
+						<a href="../EA4/EA55.htm">«FRAME_ITS_Service_Added_Value» Support for reporting related to ITS Directive 2010/40/EU</a><br />
 						FRAME_ITS_Service_Added_Value «defines» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -159,8 +214,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink26" onclick="parent.toggleDiv('detailsDIVLink26','DetailsImageLink26')" />Details:
-							<div id="detailsDIVLink26" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink33" /></button>Details:
+							<div id="detailsDIVLink33" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -168,7 +223,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA3/EA41.htm">«FRAME_ITS_Service_Added_Value» Benefit of harmonized data and service provission</a><br />
+						<a href="../EA4/EA48.htm">«FRAME_ITS_Service_Added_Value» EU-wide common understanding of Delegated Regulations</a><br />
 						FRAME_ITS_Service_Added_Value «defines» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -182,8 +237,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink27" onclick="parent.toggleDiv('detailsDIVLink27','DetailsImageLink27')" />Details:
-							<div id="detailsDIVLink27" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink34" /></button>Details:
+							<div id="detailsDIVLink34" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -193,7 +248,7 @@ function nameClassifier(name, separator)
 			</table>
 		</div>
 		<div class="ItemBody" id="CustomPropertiesTable">
-			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+			<table class="Table ea_table">
 				<tr>
 					<td width="30%" class="TableHeading">Property</td>
 					<td width="70%" class="TableHeading">Value</td>
@@ -206,7 +261,7 @@ function nameClassifier(name, separator)
 
 			</table>
 		</div>		<div class="ItemBody" id="LinksTable">
-			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+			<table class="Table ea_table">
 				<tr>
 					<td width="30%" class="TableHeading">Object</td>
 					<td width="10%" class="TableHeading">Type</td>
@@ -215,7 +270,7 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../EA1/EA29.htm">«FRAME_Actor» Data and Service provider</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA1/EA30.htm">«FRAME_Actor» Member State</a></td>
 					<td width="10%" class="TableRow" valign="top">FRAME_Actor</td>
 					<td width="10%" class="TableRow" valign="top">Abstraction</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
@@ -225,7 +280,13 @@ function nameClassifier(name, separator)
 			</table>
 		</div>
 	</div>
-<div class="pageFooter"></div>
- 
+ </div>
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
 </body>
 </html>
+

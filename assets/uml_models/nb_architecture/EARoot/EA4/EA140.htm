@@ -2,100 +2,160 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Specifications</title>
+<title>03 NB Organisational View</title>
 <link href="../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../js/displayToc.js" type="text/javascript"></script>
 <script>
-function initPage(src) {	
-	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
-		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
-	else
-		parent.initPage(src);
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
 }
 
-function nameClassifier(name, separator)
-{
-  var str = name;
-  var classifierName;
-  var node = document.getElementById('name_classifier');
-  if(node != null)
-  {
-    classifierName = node.innerHTML;
-  }
-  if(classifierName != "")
-  {
-   str += separator + classifierName;
-  }
-  
-  return str;
-}
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
 </script>
+<style>
+
+</style>
 </head>
-<body onload="initPage(this);" class="Content">
-<div class="pageHeader"></div>
-<div class="PageBody">
-	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("Specifications", " : "))</script>  : Public   Package</span>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> 03 NB Organisational View </h1>
+			<!-- <img class="header_image" src="../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../EA5.htm">National Body Reference Architecture</a> / <a href="EA142.htm">03 NB Organisational View</a> / <a href="EA140.htm">03 NB Organisational View</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<li><img src="../../images/4.png" alt="Package"/> <a href="./EA1/EA148.htm">Agreements</a></li>
+<li><img src="../../images/4.png" alt="Package"/> <a href="./EA2/EA153.htm">Roles</a></li>
+<li><img src="../../images/4.png" alt="Package"/> <a href="./EA3/EA159.htm">Specifications</a></li>
+<li><img src="../../images/175.png" alt="Diagram"/> <a href="EA140.htm">03 NB Organisational View</a></li>
+<li><img src="../../images/60.png" alt="Collaboration"/> <a href="EA145.htm">Compliance Assement</a></li>
+</ul>
+
+					</td>
+					<td class="contentcell"><div class="PageBody">
+	<div class="diagram_image"> 
+<img src="EA141.png" usemap="#EA141" border="0" />
+
+<MAP NAME="EA141">
+<area shape="rect" coords="345,326,450,396" href="EA145.htm" target="_self">
+<area shape="rect" coords="144,35,234,94" href="./EA3/EA163.htm" target="_self">
+<area shape="rect" coords="444,10,694,85" href="EA143.htm" target="_self">
+<area shape="rect" coords="600,331,700,391" href="./EA3/EA167.htm" target="_self">
+<area shape="rect" coords="140,110,240,170" href="./EA3/EA165.htm" target="_self">
+<area shape="rect" coords="160,320,260,380" href="./EA3/EA166.htm" target="_self">
+<area shape="rect" coords="468,327,570,395" href="./EA1/EA152.htm" target="_self">
+<area shape="rect" coords="20,320,122,388" href="./EA1/EA150.htm" target="_self">
+<area shape="rect" coords="160,210,262,278" href="./EA1/EA151.htm" target="_self">
+<area shape="rect" coords="20,10,110,80" href="./EA2/EA155.htm" target="_self">
+<area shape="rect" coords="360,464,450,534" href="./EA2/EA154.htm" target="_self">
+<area shape="rect" coords="20,210,110,280" href="./EA2/EA156.htm" target="_self">
+<area shape="rect" coords="26,440,116,510" href="./EA2/EA157.htm" target="_self">
+<area shape="rect" coords="310,110,430,170" href="./EA3/EA164.htm" target="_self">
+<area shape="rect" coords="340,209,430,279" href="./EA2/EA158.htm" target="_self">
+<area shape="rect" coords="10,110,112,178" href="./EA1/EA149.htm" target="_self">
+</MAP>
+ </div>
+	<div class="ObjectTitle">03 NB Organisational View : Logical diagram</div>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">11.12.2023 8:19:40</td>
+			<td width="85%" class="ObjectDetailsValue">28.03.2021 17:56:13</td>
 		</tr>
 		<tr>
-			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">11.12.2023 8:19:40</td>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">16.12.2024 10:26:05</td>
 		</tr>
-		<tr style="height: 10px"><td colspan="2"></td></tr>
-		<tr>
-			<td class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
-			<td class="ObjectDetailsValue"></td>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
 		</tr>
 		<tr id="proj00" style="display: none;">
-			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
-			<td class="ObjectDetailsValue">BWI</td>
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">work</td>
 		</tr>
 		<tr id="proj01" style="display: none;">
-			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
-			<td class="ObjectDetailsValue">1.0</td>
-		</tr>
-		<tr id="proj02" style="display: none;">
-			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
-			<td class="ObjectDetailsValue">1.0</td>
-		</tr>
-		<tr id="proj03" style="display: none;">
-			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
-			<td class="ObjectDetailsValue">Proposed</td>
-		</tr>
-		<tr id="proj04" style="display: none;">
-			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
-			<td class="ObjectDetailsValue">Easy</td>
-		</tr>
-		<tr id="proj05" style="display: none;">
-			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
-			<td class="ObjectDetailsValue"></td>
-		</tr>
-		<tr id="proj06" style="display: none;">
-			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
-			<td class="ObjectDetailsValue"></td>
-		</tr>
-		<tr id="proj05" style="display: none;">
-			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Multiplicity:</td>
-			<td class="ObjectDetailsValue"></td>
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
 		</tr>
 		<tr>
-			<td class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
-			<td class="ObjectDetailsValue"></td>
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
 		</tr>
 		<tr id="adv00" style="display: none;">
-			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{57522110-54AA-43d6-8F37-AD43F6D68D72}</td>
-		</tr>
-		<tr id="adv01" style="display: none;">
-			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"></td>
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{5EBBFBEF-A20E-41b1-9B2D-87761D987CC5}</td>
 		</tr>
 	</table>
-	
-<div class="pageFooter"></div>
- 
+	<div class="ObjectDetailsNotes">The Organisational View shows the legal framework between the involved Roles (turquoise boxes) by using Agreements (oval orange items) and referencing official specifications (light blue boxes) &lt;br/&gt;</div>
+
+</div>
+
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
 </body>
 </html>
+

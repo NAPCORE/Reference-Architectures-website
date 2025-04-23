@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Compliance assesment</title>
+<link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> Compliance assesment </h1>
+			<!-- <img class="header_image" src="../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../EA5.htm">National Body Reference Architecture</a> / <a href="../EA171.htm">05 NB Communication View</a> / <a href="EA184.htm">Compliance assesment</a> / <a href="EA182.htm">Compliance assesment</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<li><img src="../../../images/175.png" alt="Diagram"/> <a href="EA182.htm">Compliance assesment</a></li>
+<li><img src="../../../images/21.png" alt="Activity"/> <a href="EA188.htm">NB indicates non-compliance</a></li>
+</ul>
+
+					</td>
+					<td class="contentcell"><div class="PageBody">
+	<div class="diagram_image"> 
+<img src="EA183.png" usemap="#EA183" border="0" />
+
+<MAP NAME="EA183">
+<area shape="rect" coords="1541,96,1646,166" href="EA188.htm" target="_self">
+<area shape="rect" coords="620,290,725,360" href="../EA4/EA232.htm" target="_self">
+<area shape="rect" coords="620,510,725,580" href="../EA4/EA227.htm" target="_self">
+<area shape="rect" coords="470,290,575,360" href="../EA4/EA233.htm" target="_self">
+<area shape="rect" coords="1099,187,1204,257" href="../EA4/EA224.htm" target="_self">
+<area shape="rect" coords="1410,291,1515,361" href="../EA4/EA223.htm" target="_self">
+<area shape="rect" coords="1247,291,1352,361" href="../EA4/EA220.htm" target="_self">
+<area shape="rect" coords="1247,502,1352,572" href="../EA4/EA235.htm" target="_self">
+<area shape="rect" coords="1290,10,1410,70" href="EA185.htm" target="_self">
+<area shape="rect" coords="1097,502,1202,572" href="../EA4/EA236.htm" target="_self">
+<area shape="rect" coords="1099,291,1204,361" href="../EA4/EA219.htm" target="_self">
+<area shape="rect" coords="938,291,1043,361" href="../EA4/EA218.htm" target="_self">
+<area shape="rect" coords="769,391,874,461" href="../EA4/EA221.htm" target="_self">
+<area shape="rect" coords="769,290,874,360" href="../EA4/EA222.htm" target="_self">
+<area shape="rect" coords="311,289,416,359" href="../EA4/EA229.htm" target="_self">
+<area shape="rect" coords="151,289,256,359" href="../EA4/EA234.htm" target="_self">
+<area shape="rect" coords="20,289,110,359" href="../../EA4/EA2/EA158.htm" target="_self">
+<area shape="rect" coords="21,490,111,560" href="../../EA4/EA2/EA154.htm" target="_self">
+<area shape="rect" coords="11,80,1668,468" href="EA187.htm" target="_self">
+<area shape="rect" coords="10,481,1668,602" href="EA186.htm" target="_self">
+</MAP>
+ </div>
+	<div class="ObjectTitle">Compliance assesment : FRAME_Diagram diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">04.09.2023 10:54:04</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">05.08.2024 09:11:07</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">BWI</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{0175F026-9952-4588-ACAF-6DA60158B79A}</td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">Tpdo Description&lt;br/&gt;&lt;br/&gt;Compliance assessment includes random inspection&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;What impact do we expect from Random Inspections?&lt;br/&gt;Agreed answer: Make organisations make necessary changes to their (meta)data and improve the &lt;br/&gt;quality of the NAPs&lt;br/&gt;</div>
+
+</div>
+
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+
