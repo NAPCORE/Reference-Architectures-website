@@ -11,12 +11,12 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
+    
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+          with:
+            fetch-depth: 0
 
       - name: Configure Git Credentials
         run: |
