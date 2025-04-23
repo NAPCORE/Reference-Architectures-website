@@ -18,6 +18,6 @@ National Body / Competent Authority (NB) Reference architecture  the aims to har
 
 ### Version 5.1.1rev20250210 
 
-- see the [changelog file](../assets/docs/changelog-nb.docx)
+- see the [changelog file](../assets/docs/changelog-nb.txt)
 
 

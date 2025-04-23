@@ -21,6 +21,6 @@ National Access Point (NAP) Reference architecture aims to harmonize NAP activit
 
 ### Version 5.1.1rev20250210 
 
-- see the [changelog file](../assets/docs/changelog-nap.docx)
+- see the [changelog file](../assets/docs/changelog-nap.txt)
 
 
