@@ -1,0 +1,6 @@
+tocTab[tocTab.length] = new Array("0.6:1", "", "Self Declaration State Diagram", "EARoot/EA6/EA250.htm", "175.png", "222", "0", "", "Logical diagram0","{16945DA1-4A45-4e1d-8799-0F90BD77D64F}");
+tocTab[tocTab.length] = new Array("0.6:2", "", "«GlossaryEntry» NB Glossary", "EARoot/EA6/EA259.htm", "5.png", "E5649", "0", "", "Class0","{0396DED8-928E-450d-BC2B-16B42FC84087}");
+tocTab[tocTab.length] = new Array("0.6:3", "", "«model document» Change History", "EARoot/EA6/EA260.htm", "5.png", "E5650", "0", "", "Class0","{E1490E31-8101-47d1-9D77-AF97D60AFFAD}");
+tocTab[tocTab.length] = new Array("0.6:4", "", "Issues Tracking and Wiki", "EARoot/EA6/EA261.htm", "82.png", "E5651", "0", "", "Artifact0","{5615A50E-7D95-4b83-A0CB-74A7443E4075}");
+tocTab[tocTab.length] = new Array("0.6.1", "1", "SD States", "EARoot/EA6/EA1/EA262.htm", "4.png", "", "", "{F50ADA61-54C9-4bc6-99F6-E6FADD5AED3F}", "Package");
+tocTab[tocTab.length] = new Array("0.6.2", "1", "Specifications", "EARoot/EA6/EA2/EA280.htm", "4.png", "", "", "{57522110-54AA-43d6-8F37-AD43F6D68D72}", "Package");

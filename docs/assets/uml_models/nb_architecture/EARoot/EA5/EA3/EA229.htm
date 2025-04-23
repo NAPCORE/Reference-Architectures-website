@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Self Declaration reception process</title>
+<link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> Self Declaration reception process </h1>
+			<!-- <img class="header_image" src="../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../EA3.htm">National Body Reference Architecture</a> / <a href="../EA169.htm">NB Communication View</a> / <a href="EA231.htm">Self-declaration Reception Process</a> / <a href="EA229.htm">Self Declaration reception process</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<li><img src="../../../images/4.png" alt="Package"/> <a href="./EA1/EA236.htm">Service Processes</a></li>
+<li><img src="../../../images/175.png" alt="Diagram"/> <a href="EA229.htm">Self Declaration reception process</a></li>
+</ul>
+
+					</td>
+					<td class="contentcell"><div class="PageBody">
+	<div class="diagram_image"> 
+<img src="EA230.png" usemap="#EA230" border="0" />
+
+<MAP NAME="EA230">
+<area shape="rect" coords="727,369,832,439" href="./EA1/EA237.htm" target="_self">
+<area shape="rect" coords="1094,29,1199,99" href="./EA1/EA245.htm" target="_self">
+<area shape="rect" coords="1094,225,1199,295" href="./EA1/EA240.htm" target="_self">
+<area shape="rect" coords="885,225,990,295" href="./EA1/EA243.htm" target="_self">
+<area shape="rect" coords="885,29,990,99" href="./EA1/EA249.htm" target="_self">
+<area shape="rect" coords="329,369,434,439" href="./EA1/EA242.htm" target="_self">
+<area shape="rect" coords="169,369,274,439" href="./EA1/EA239.htm" target="_self">
+<area shape="rect" coords="706,29,811,99" href="./EA1/EA248.htm" target="_self">
+<area shape="rect" coords="169,219,274,289" href="./EA1/EA247.htm" target="_self">
+<area shape="rect" coords="644,219,749,289" href="./EA1/EA246.htm" target="_self">
+<area shape="rect" coords="489,219,594,289" href="./EA1/EA238.htm" target="_self">
+<area shape="rect" coords="489,31,594,101" href="./EA1/EA241.htm" target="_self">
+<area shape="rect" coords="329,31,434,101" href="./EA1/EA244.htm" target="_self">
+<area shape="rect" coords="29,369,119,439" href="../../EA3/EA2/EA164.htm" target="_self">
+<area shape="rect" coords="29,31,119,101" href="../../EA3/EA2/EA165.htm" target="_self">
+<area shape="rect" coords="29,219,119,289" href="../../EA3/EA2/EA161.htm" target="_self">
+<area shape="rect" coords="10,350,1230,471" href="EA233.htm" target="_self">
+<area shape="rect" coords="18,199,1230,309" href="EA232.htm" target="_self">
+<area shape="rect" coords="18,10,1230,142" href="EA234.htm" target="_self">
+</MAP>
+ </div>
+	<div class="ObjectTitle">Self Declaration reception process : FRAME_Diagram diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">03.07.2023 10:26:00</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">17.04.2025 16:30:39</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">BWI</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{0FEED0F3-BE76-4071-A61B-9421EE88B5C0}</td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">Member State shall designate an impartial and independent National Body and make sure that this National Body is properly authorised, according to national regulations, to receive and process self-declarations. The National Body will need the following preparation before being ready to receive self-declarations:&lt;br/&gt;Identify and organise resources for receiving and processing self-declarations and for performing compliance assessment and random inspections.&lt;br/&gt;Develop an internal process for receiving and processing self-declarations, taking into account both European regulation and contextual factors present in the Member State such as the number of service or data providers expected to submit a self-declaration and national administrative law.&lt;br/&gt;Develop a plan on how to identify data and service providers covered by the delegated regulation and how the National Body will approach the stakeholders. Provide national templates for self-declarations and accompanying documents.&#183;Compile Member State specific instructions for data and service providers on how to fill in and submit a self-declaration and related accompanying documents. After the National Body has been nominated and necessary preparations have been carried out, it will provide information to potential data and service providers on their obligation to submit a self-declaration and provide instructions on how to fill in and submit a self-declaration. The National Body may inform the stakeholders with different methods such as email campaigns, sending letters, publishing information on the NAP website or arranging workshops. To identify the relevant actors obligated to submit a self-declaration, the National Body may use procedures specific to its Member State. These may include e.g. utilization of the contacts of the NAP operator. Good knowledge of the national mobility landscape is required to identify the stakeholders potentially having an obligation to submit a self-declaration. To increase its knowledge and to build a more complete picture of the mobility landscape, the National Body may collaborate with local or regional transport authorities. When exchanging information between authorities, GDPR compliance is necessary. After being contacted by the National Body, the data or service provider submits a data set or service to the National Access Point (NAP), international access point or content access point as required by the applicable delegated regulation. After submitting the service or data set, the provider fills in and submits the self-declaration form to the National Body. This can take place either electronically (i.e., by email or by indicating compliance via a checkbox) or in paper form. The processing of a self-declaration form starts with verification of the contact details of the data or service provider and checking whether the National Body is responsible and acknowledged for the respective delegated regulation.&lt;br/&gt;In case of incomplete or inconsistent contact details, the National Body may request the data or service provider to update its contact details. If the stakeholder does not provide the missing contact details or does not correct erroneous contact details, the National Body may stop processing the self-declaration. After verification of contact details, the National Body verifies the completeness of the self-declaration. In practice, this means checking that all mandatory fields of the self-declaration form have been filled in, and all required accompanying documents have been provided. If needed, the National Body may request the data or service provider to update the self-declaration and complete the missing parts. After a complete self-declaration has been received, the National Body can provide an acknowledgement to the data or service provider. After receiving and processing the self-declaration, the National Body might update the results to a registry/database (which is not compulsory) of processed self-declarations. At the same time, the National Body may also update the registry of compliant services and data sets (optional), if it has been established in the Member State. Contents of these registries will be the basis for periodic reporting related to the ITS Directive and delegated regulations in the Member State and at the European level. The random inspections that are carried out periodically at pre-determined intervals also check the collected self-declarations and descriptions of compliant services and data sets. In the following figures, digital map producers and broadcasters are included in data or service provider&lt;br/&gt;&lt;br/&gt;</div>
+
+</div>
+
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+
