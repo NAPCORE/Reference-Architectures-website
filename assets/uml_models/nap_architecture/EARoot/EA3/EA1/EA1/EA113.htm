@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>F3.6.5 Provide NAP User Support</title>
+<title>F3.6.6 Provide Metadata Quality Checks</title>
 <link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,11 +34,11 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("F3.6.5 Provide NAP User Support", " : "))</script>  : Public  &lt;&lt;FRAME_Low_Level_Function&gt;&gt; FRAME_Low_Level_Function</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("F3.6.6 Provide Metadata Quality Checks", " : "))</script>  : Public  &lt;&lt;FRAME_Low_Level_Function&gt;&gt; FRAME_Low_Level_Function</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">30.09.2024 17:29:22</td>
+			<td width="85%" class="ObjectDetailsValue">30.08.2023 13:19:13</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
@@ -87,21 +87,19 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{E4E0DD97-20AB-4868-B0DE-C0C3C14EA4BA}</td>
+			<td class="ObjectDetailsValue">{15BFF38A-05D9-4775-84C9-6604B0EEA3C6}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
 			<td class="ObjectDetailsValue"><a href="../../EA94.htm">NAP Functional View - Metadata Directory</a>, <a href="../../EA96.htm">NAP Functional View - Data Platform</a>, <a href="../../EA92.htm">Functional Tree of F3.6 Provide NAP</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">This Function shall be capable of providing the following facilities: &lt;br/&gt;&lt;br/&gt;(1) The ability to receive and process support requests from any existing or potential NAP Content Provider or NAP Content Consumer. &lt;br/&gt;(2) The ability to respond to user support requests adequately at least in a form of first-level support. &lt;br/&gt;(3) The ability to consult other NAP roles for issues which cannot be responded with the own knowledge. &lt;br/&gt;(4) The ability to manage issues and log the issue resolution for later use by NAP Users or by an Auditing entity &lt;br/&gt;&lt;br/&gt;NOTE: this could be done via a ticketing system &lt;br/&gt;&lt;br/&gt;=========== &lt;br/&gt;&lt;br/&gt;TODO: &lt;br/&gt;&lt;br/&gt;- managing and ticketing call for the data store an Issue data store shall be created &lt;br/&gt;- the Auditing entity, i.e. NB is not mentioned anywhere, they shall be created as new terminator in NAP Actors &lt;br/&gt;- NAP Roles are mentioned in the text of the function, it must be clear who this is. &lt;br/&gt;- IMPORTANT: reduce number of dataflows by just addressing all NAP users at once by their higher-level terminator &lt;br/&gt;- IMPORTANT: who is the NAP User? Where do we have it specified? Different for NAP Actor?&#160;&#160;&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">This function shall be capable of providing the following facilities:&#160;&#160;&lt;br/&gt;&lt;br/&gt;(1) The ability to perform metadata quality checks based on pre specified rules and procedures (including appropriate time frequencies). The checks follow the MQA and InQMS methodology, at minimum it is an availability of the urls provided in metadata.&#160;&#160;&lt;br/&gt;(2) The ability to retrieve data to be checked from the NAP Metadata store.&#160;&#160;&lt;br/&gt;(3) The ability to disseminate and store the outcomes of data quality checks to the NAP Metadata store.&#160;&#160;&lt;br/&gt;(4) Ability to perform the checks based on metadata events (data insert, data update) in the NAP Metadata store&#160;&#160;&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
 			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
 			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
-			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
-			<li onClick="parent.toggleItem('Requirements');" id="RequirementsTitle">Requirements</li>
 			<li onClick="parent.toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
@@ -114,7 +112,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA2/EA119.htm">«FRAME_High_Level_Function» F3.6 Operate National Access Point</a><br />
+						<a href="../EA2/EA118.htm">«FRAME_High_Level_Function» F3.6 Operate National Access Point</a><br />
 						FRAME_High_Level_Function &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -128,8 +126,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink174" onclick="parent.toggleDiv('detailsDIVLink174','DetailsImageLink174')" />Details:
-							<div id="detailsDIVLink174" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink181" onclick="parent.toggleDiv('detailsDIVLink181','DetailsImageLink181')" />Details:
+							<div id="detailsDIVLink181" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -137,8 +135,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA1/EA178.htm">«FRAME_Low_Level_Data_Flow» tnap.cc-support_response</a><br />
-						FRAME_Low_Level_Data_Flow «OUT» 
+						<a href="../../EA3/EA1/EA151.htm">«FRAME_Low_Level_Data_Flow» mt_NAP_metadata_quality_check_result</a><br />
+						FRAME_Low_Level_Data_Flow «IN» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
 						<strong>Name:</strong> &nbsp;<br />
@@ -151,31 +149,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink175" onclick="parent.toggleDiv('detailsDIVLink175','DetailsImageLink175')" />Details:
-							<div id="detailsDIVLink175" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA1/EA181.htm">«FRAME_Low_Level_Data_Flow» tnap.cp-support_response</a><br />
-						FRAME_Low_Level_Data_Flow «OUT» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink176" onclick="parent.toggleDiv('detailsDIVLink176','DetailsImageLink176')" />Details:
-							<div id="detailsDIVLink176" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink182" onclick="parent.toggleDiv('detailsDIVLink182','DetailsImageLink182')" />Details:
+							<div id="detailsDIVLink182" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -193,8 +168,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA1/EA163.htm">«FRAME_Low_Level_Data_Flow» fnap.cc-support_request</a><br />
-						FRAME_Low_Level_Data_Flow «IN» 
+						<a href="../../EA3/EA1/EA150.htm">«FRAME_Low_Level_Data_Flow» mt_NAP_metadata_for_quality_check</a><br />
+						FRAME_Low_Level_Data_Flow «OUT» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
 						<strong>Name:</strong> &nbsp;<br />
@@ -207,83 +182,9 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink177" onclick="parent.toggleDiv('detailsDIVLink177','DetailsImageLink177')" />Details:
-							<div id="detailsDIVLink177" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink183" onclick="parent.toggleDiv('detailsDIVLink183','DetailsImageLink183')" />Details:
+							<div id="detailsDIVLink183" class="DetailsDiv" >
 							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA1/EA166.htm">«FRAME_Low_Level_Data_Flow» fnap.cp-support_request</a><br />
-						FRAME_Low_Level_Data_Flow «IN» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink178" onclick="parent.toggleDiv('detailsDIVLink178','DetailsImageLink178')" />Details:
-							<div id="detailsDIVLink178" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-
-			</table>
-		</div>
-<div class="ItemBody" id="TaggedValTable">
-	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
-		<tr>
-			<td width="50%" class="TableHeading">Tag</td>
-			<td width="50%" class="TableHeading">Value</td>
-		</tr>
-					<tr>
-				<td width="50%" class="TableRow" valign="top">status</td>
-				<td width="50%" class="TableRow" valign="top">copy</td>
-			</tr>	
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario179" onclick="parent.toggleDiv('detailsDIVScenario179','DetailsImageScenario179')" />Details:
-						<div id="detailsDIVScenario179" class="DetailsDiv" >
-						&nbsp;
-						</div>
-					</div>
-				</td>
-			</tr>
-	</table>
-</div>		<div class="ItemBody" id="RequirementsTable">
-			<table border="0" cellspacing="0" cellpadding="0" class="Table">
-				<tr>
-					<td width="60%" class="TableHeading">Requirement</td>
-					<td width="10%" class="TableHeading">Type</td>
-					<td width="10%" class="TableHeading">Status</td>
-					<td width="10%" class="TableHeading">Difficulty</td>
-					<td width="10%" class="TableHeading">Priority</td>
-					<td width="10%" class="TableHeading">Stability</td>
-				</tr>
-				<tr>
-					<td width="60%" class="TableRow">Functional</td>
-					<td width="10%" class="TableRow">Functional</td>
-					<td width="10%" class="TableRow">Proposed</td>
-					<td width="10%" class="TableRow">Medium</td>
-					<td width="10%" class="TableRow">Medium</td>
-					<td width="10%" class="TableRow">Moderate</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="6">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageRequirement180" onclick="parent.toggleDiv('detailsDIVRequirement180','DetailsImageRequirement180')" />Details:
-							<div id="detailsDIVRequirement180" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">(a) continuously monitor for the receipt of either of the input data flows;&lt;br/&gt;(b) depending on the source and content of the data flow received in (a), assemble the data objects that will enable an appropriate response to be provided;&lt;br/&gt;(c) put the data objects assembled in (b) into a data flow that can be sent to the originator of the data flow received in (s).&lt;br/&gt;</div>
-
 							</div>
 						</div>
 					</td>
@@ -319,9 +220,9 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../../EA5/EA2/EA242.htm">«FRAME_Application» Support (ticket) Module</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA5/EA2/EA240.htm">«FRAME_Application» Metadata Quality Check Module</a></td>
 					<td width="10%" class="TableRow" valign="top">FRAME_Application</td>
-					<td width="10%" class="TableRow" valign="top">Usage</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>

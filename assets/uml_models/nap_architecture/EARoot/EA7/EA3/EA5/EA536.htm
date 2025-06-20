@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Technical specifications::OpRa</title>
+<link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<div id="name_classifier" style="display: none;"></div>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("OpRa", " : "))</script>  : Public abstract &lt;&lt;FRAME_Specification&gt;&gt; FRAME_Specification</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">16.06.2025 15:01:41</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">16.06.2025 15:05:31</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">bures</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.5.1</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{1240A1C8-FD0D-4239-8295-88D948622D90}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="../EA339.htm">Specifications and Requirements</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">&lt;b&gt;Type&lt;/b&gt;: Technical Standard &lt;br/&gt;&lt;b&gt;Full Name&lt;/b&gt;: Operational Raw Data and Statistics for Public Transport &#8211; CEN Technical Report (OpRa) &lt;br/&gt;&lt;b&gt;Link&lt;/b&gt;: https://transmodel-cen.eu/index.php/opra/&lt;br/&gt;&lt;b&gt;Description&lt;/b&gt;: OpRa is a CEN initiative focused on the identification, collection, and exchange of raw operational data in public transport systems. It defines the conceptual framework and data requirements for recording actual, measured events &#8212; such as delays, cancellations, and vehicle movements &#8212; to support performance monitoring, service quality analysis, and strategic planning. OpRa complements Transmodel by formalising the &#8220;recorded reality&#8221; of operations, enabling consistent statistical reporting and historical analysis.&lt;br/&gt;&lt;b&gt;Additional details&lt;/b&gt;: OpRa is highly relevant for transport authorities and operators seeking to analyse operational efficiency and service reliability. It supports the study and control phase of the public transport lifecycle, bridging the gap between real-time data (e.g. SIRI) and strategic planning (e.g. NeTEx). OpRa data can be used to generate KPIs, inform policy decisions, and optimise resource allocation. It is aligned with Transmodel Parts 4 and 8 and is being developed into a full Technical Specification under CEN governance.&lt;br/&gt;&lt;b&gt;Related Documents:&lt;/b&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;a href=&quot;file://https://transmodel-cen.eu/index.php/opra/&quot;&gt;&lt;font color=&quot;#467886&quot;&gt;&lt;u&gt;OpRa Overview &#8211; Transmodel Portal&lt;/u&gt;&lt;/font&gt;&lt;/a&gt; &#8211; Scope, use cases, and conceptual alignment&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;file://https://data4pt-project.eu/data-models/transmodel/&quot;&gt;&lt;font color=&quot;#467886&quot;&gt;&lt;u&gt;DATA4PT OpRa Workstream&lt;/u&gt;&lt;/font&gt;&lt;/a&gt; &#8211; Coordination of OpRa evolution and implementation support&lt;/li&gt;&lt;/ul&gt;&lt;p/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
+		</ul>
+		<div class="ItemBody" id="CustomPropertiesTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Property</td>
+					<td width="70%" class="TableHeading">Value</td>
+				</tr>
+			<tr>
+				<td width="30%" class="TableRow">isFinalSpecialization:</td>
+				<td width="70%" class="TableRow">0</td>
+			</tr>
+
+
+			</table>
+		</div>	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

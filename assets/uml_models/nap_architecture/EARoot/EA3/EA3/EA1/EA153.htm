@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Low Level FDFs::mt_read_NAP_data</title>
+<title>Low Level FDFs::ps_metadata & data source</title>
 <link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("mt_read_NAP_data", " : "))</script> mt_read NAP data : Public abstract &lt;&lt;FRAME_Low_Level_Data_Flow&gt;&gt; FRAME_Low_Level_Data_Flow</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("ps_metadata & data source", " : "))</script>  : Public abstract &lt;&lt;FRAME_Low_Level_Data_Flow&gt;&gt; FRAME_Low_Level_Data_Flow</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">14.07.2023 10:38:40</td>
+			<td width="85%" class="ObjectDetailsValue">24.01.2025 10:04:52</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">14.01.2025 22:46:45</td>
+			<td class="ObjectDetailsValue">13.06.2025 12:40:48</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -51,15 +51,15 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="proj00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
-			<td class="ObjectDetailsValue">bures</td>
+			<td class="ObjectDetailsValue">Benjamin.Witsch</td>
 		</tr>
 		<tr id="proj01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
-			<td class="ObjectDetailsValue"></td>
+			<td class="ObjectDetailsValue">1.5.1</td>
 		</tr>
 		<tr id="proj02" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
-			<td class="ObjectDetailsValue"></td>
+			<td class="ObjectDetailsValue">1.0</td>
 		</tr>
 		<tr id="proj03" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
@@ -87,20 +87,21 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{30332204-58C2-432d-A2FE-1801EA8E123F}</td>
+			<td class="ObjectDetailsValue">{36B4BBF5-5B68-4d38-AF28-7669EFF35137}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../../EA96.htm">NAP Functional View - Data Platform</a></td>
+			<td class="ObjectDetailsValue"><a href="../../EA94.htm">NAP Functional View - Metadata Directory</a>, <a href="../../EA96.htm">NAP Functional View - Data Platform</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">It contains data objects that provide data that has been retrieved from the store of NAP Data following a request. The data that has been read from the store contains the traffic or travel information content together with its metadata which are made accessible to authorised NAP Functionality.&#160;&#160;&lt;br/&gt;The required data objects are further elaborated in NAP Data store.&#160;&#160;&#160;&lt;br/&gt;Apart from real data content the information object retrieved from data store may contain data quality records and NAP Data event logs, Identification of the data and access information.&#160;&#160;&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">It consists of inputs from the Metadata Provision System containing data objects that provide updated metadata of a catalogue record to be loaded into the store of NAP metadata. The required and optional elements of metadata can be found in a metadata catalogue: https://mobilitydcat-ap.github.io/mobilityDCAT-AP/releases/index.html. The API for metadata provision must allow for insert, modification and delete of any metadata of the Content Provider.&lt;br/&gt;Besides the metadata itself the request must contain the authorisation credentials of the entity that is providing it, so that this can be checked to ensure that it is a registered entity.&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
 			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
 			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
 			<li onClick="parent.toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
+			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
 		<div class="ItemBody" id="AssociationsToTable">
 			<table border="0" cellspacing="0" cellpadding="0" class="Table">
@@ -111,7 +112,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA1/EA1/EA115.htm">«FRAME_Low_Level_Function» F3.6.7 Manage NAP Data Repository</a><br />
+						<a href="../../EA1/EA1/EA110.htm">«FRAME_Low_Level_Function» F3.6.3 Manage Content Providers Metadata</a><br />
 						FRAME_Low_Level_Function «OUT» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -125,8 +126,31 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink332" onclick="parent.toggleDiv('detailsDIVLink332','DetailsImageLink332')" />Details:
-							<div id="detailsDIVLink332" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink334" onclick="parent.toggleDiv('detailsDIVLink334','DetailsImageLink334')" />Details:
+							<div id="detailsDIVLink334" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../../EA5/EA3/EA253.htm">«FRAME_Physical_Data_Flow» Metadata from Metadata Provision System</a><br />
+						FRAME_Physical_Data_Flow «served by» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink335" onclick="parent.toggleDiv('detailsDIVLink335','DetailsImageLink335')" />Details:
+							<div id="detailsDIVLink335" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -144,8 +168,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA4/EA190.htm">«FRAME_Datastore» D3.18 NAP Data</a><br />
-						FRAME_Datastore «IN» 
+						<a href="../../EA2/EA122.htm">«FRAME_Terminator» Metadata Provision System</a><br />
+						FRAME_Terminator «IN» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
 						<strong>Name:</strong> &nbsp;<br />
@@ -158,8 +182,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink333" onclick="parent.toggleDiv('detailsDIVLink333','DetailsImageLink333')" />Details:
-							<div id="detailsDIVLink333" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink336" onclick="parent.toggleDiv('detailsDIVLink336','DetailsImageLink336')" />Details:
+							<div id="detailsDIVLink336" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -181,7 +205,26 @@ function nameClassifier(name, separator)
 
 
 			</table>
-		</div>	</div>
+		</div>		<div class="ItemBody" id="LinksTable">
+			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA7/EA6/EA1/EA665.htm">«Functional» DF F3.6.3 -> MPS</a></td>
+					<td width="10%" class="TableRow" valign="top">Issue</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
 <div class="pageFooter"></div>
  
 </body>

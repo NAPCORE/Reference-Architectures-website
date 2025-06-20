@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Low Level FDFs::fnap.drs-data_request</title>
+<title>Low Level FDFs::fnap.mdrs-metadata_request</title>
 <link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,11 +34,11 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("fnap.drs-data_request", " : "))</script> fnap.drs-data request : Public abstract &lt;&lt;FRAME_Low_Level_Data_Flow&gt;&gt; FRAME_Low_Level_Data_Flow</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("fnap.mdrs-metadata_request", " : "))</script> fnap.mdrs-metadata request : Public abstract &lt;&lt;FRAME_Low_Level_Data_Flow&gt;&gt; FRAME_Low_Level_Data_Flow</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">30.08.2023 14:00:54</td>
+			<td width="85%" class="ObjectDetailsValue">13.07.2023 14:19:18</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
@@ -51,7 +51,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="proj00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
-			<td class="ObjectDetailsValue">BWI</td>
+			<td class="ObjectDetailsValue">bures</td>
 		</tr>
 		<tr id="proj01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
@@ -87,14 +87,14 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{A57EDCA4-5B76-4808-9C68-5DDF06E70C93}</td>
+			<td class="ObjectDetailsValue">{1F8479D1-6CEC-42fd-8CD2-79F9AD3334A4}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../../EA96.htm">NAP Functional View - Data Platform</a></td>
+			<td class="ObjectDetailsValue"><a href="../../EA94.htm">NAP Functional View - Metadata Directory</a>, <a href="../../EA96.htm">NAP Functional View - Data Platform</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">It consists of inputs from the Data Requesting System containing data objects that provide request for retrieval of traffic or travel data stored in NAP Data store. Besides the identification of data to be retrieved the request must contain the authorisation credentials of the entity that is providing it, so that this can be checked to ensure that it is a registered entity with right to access the data.&#160;&#160;&#160;&lt;br/&gt;&lt;br/&gt;NOTE: authorisation credentials might be void if the data to be retrieved are freely available (i.e. open data)&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">It consists of inputs from the Metadata Requesting System containing data objects that provide request for retrieval of information stored in NAP Metadata store as DCAT-AP records. The request shall contain keywords or any refining demand in at least one metadata element.&#160;&#160;&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
@@ -111,7 +111,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../../EA5/EA3/EA250.htm">«FRAME_Physical_Data_Flow» PDF Data to Data Requesting System</a><br />
+						<a href="../../../EA5/EA3/EA256.htm">«FRAME_Physical_Data_Flow» Metadata to Requesting System</a><br />
 						FRAME_Physical_Data_Flow «served by» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -125,8 +125,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink286" onclick="parent.toggleDiv('detailsDIVLink286','DetailsImageLink286')" />Details:
-							<div id="detailsDIVLink286" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink289" onclick="parent.toggleDiv('detailsDIVLink289','DetailsImageLink289')" />Details:
+							<div id="detailsDIVLink289" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -134,7 +134,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA1/EA1/EA117.htm">«FRAME_Low_Level_Function» F3.6.9 Manage NAP Data Retrieval</a><br />
+						<a href="../../EA1/EA1/EA111.htm">«FRAME_Low_Level_Function» F3.6.4 Manage Metadata Retrieval</a><br />
 						FRAME_Low_Level_Function «OUT» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -148,8 +148,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink287" onclick="parent.toggleDiv('detailsDIVLink287','DetailsImageLink287')" />Details:
-							<div id="detailsDIVLink287" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink290" onclick="parent.toggleDiv('detailsDIVLink290','DetailsImageLink290')" />Details:
+							<div id="detailsDIVLink290" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -167,7 +167,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA2/EA122.htm">«FRAME_Terminator» Data Requesting System</a><br />
+						<a href="../../EA2/EA123.htm">«FRAME_Terminator» Metadata Requesting System</a><br />
 						FRAME_Terminator «IN» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -181,8 +181,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink288" onclick="parent.toggleDiv('detailsDIVLink288','DetailsImageLink288')" />Details:
-							<div id="detailsDIVLink288" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink291" onclick="parent.toggleDiv('detailsDIVLink291','DetailsImageLink291')" />Details:
+							<div id="detailsDIVLink291" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>

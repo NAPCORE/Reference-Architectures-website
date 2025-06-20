@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Physical Dataflows::PDF Metadata and Data Management</title>
+<title>Physical Dataflows::Metadata and User Management</title>
 <link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("PDF Metadata and Data Management", " : "))</script>  : Public abstract &lt;&lt;FRAME_Physical_Data_Flow&gt;&gt; FRAME_Physical_Data_Flow</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("Metadata and User Management", " : "))</script>  : Public abstract &lt;&lt;FRAME_Physical_Data_Flow&gt;&gt; FRAME_Physical_Data_Flow</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">27.01.2024 1:08:18</td>
+			<td width="85%" class="ObjectDetailsValue">27.01.2024 1:04:07</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">14.01.2025 1:05:54</td>
+			<td class="ObjectDetailsValue">11.06.2025 14:02:35</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,14 +87,14 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{8DE1FAAE-FC95-48f3-B1BD-F0F67A00B135}</td>
+			<td class="ObjectDetailsValue">{252899F7-3651-40d5-A2A6-1A59A8185657}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../EA227.htm">NAP Physical View - Data Platform</a></td>
+			<td class="ObjectDetailsValue"><a href="../EA224.htm">NAP Physical View - Metadata Directory</a>, <a href="../EA226.htm">NAP Physical View - Data Platform</a>, <a href="../../EA6/EA262.htm">NAP Communication View - Metadata Directory</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">This Physical Data Flow facilitates information exchange between Metadata Management and Data Management modules. This exchange concerns metadata retrieval/check/update with regards data stored in the Data Store. &lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">This Physical Data Flow facilitates information exchange between Metadata Management and User Management modules. This exchange concerns request for authorisation of Content Provider to access and change data in Metadata Management Module. &lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
@@ -111,30 +111,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA3/EA1/EA149.htm">«FRAME_Low_Level_Data_Flow» mt_NAP_metadata_for_data_check_and_store_request</a><br />
-						FRAME_Low_Level_Data_Flow «served by» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink651" onclick="parent.toggleDiv('detailsDIVLink651','DetailsImageLink651')" />Details:
-							<div id="detailsDIVLink651" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA3/EA1/EA150.htm">«FRAME_Low_Level_Data_Flow» mt_NAP_metadata_for_data_check_and_store_response</a><br />
+						<a href="../../EA3/EA3/EA1/EA167.htm">«FRAME_Low_Level_Data_Flow» mt_NAP_metadata_mod_authorisation_result</a><br />
 						FRAME_Low_Level_Data_Flow «served by» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -150,6 +127,29 @@ function nameClassifier(name, separator)
 					<td class="TableRowBottomDashed"  colspan="3">
 						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink652" onclick="parent.toggleDiv('detailsDIVLink652','DetailsImageLink652')" />Details:
 							<div id="detailsDIVLink652" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../EA3/EA3/EA1/EA166.htm">«FRAME_Low_Level_Data_Flow» mt_NAP_metadata_mod_authorisation_request</a><br />
+						FRAME_Low_Level_Data_Flow «served by» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink653" onclick="parent.toggleDiv('detailsDIVLink653','DetailsImageLink653')" />Details:
+							<div id="detailsDIVLink653" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -181,14 +181,14 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../EA2/EA240.htm">«FRAME_Application» Metadata Management Module</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA2/EA242.htm">«FRAME_Application» User Management Module</a></td>
 					<td width="10%" class="TableRow" valign="top">FRAME_Application</td>
 					<td width="10%" class="TableRow" valign="top">Usage</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../EA2/EA238.htm">«FRAME_Application» Data Management Module</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA2/EA239.htm">«FRAME_Application» Metadata Management Module</a></td>
 					<td width="10%" class="TableRow" valign="top">FRAME_Application</td>
 					<td width="10%" class="TableRow" valign="top">Usage</td>
 					<td width="10%" class="TableRow" valign="top">From</td>

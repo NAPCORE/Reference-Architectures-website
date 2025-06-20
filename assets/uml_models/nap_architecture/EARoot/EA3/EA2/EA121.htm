@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Data Provision System</title>
+<title>Data Requesting System</title>
 <link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("Data Provision System", " : "))</script>  : Public  &lt;&lt;FRAME_Terminator&gt;&gt; FRAME_Terminator</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("Data Requesting System", " : "))</script>  : Public  &lt;&lt;FRAME_Terminator&gt;&gt; FRAME_Terminator</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">14.12.2023 15:23:51</td>
+			<td width="85%" class="ObjectDetailsValue">30.08.2023 14:00:36</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">29.09.2024 0:39:50</td>
+			<td class="ObjectDetailsValue">10.02.2025 11:09:06</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,14 +87,14 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{13412496-2C40-428c-B961-F0F374D991C8}</td>
+			<td class="ObjectDetailsValue">{6CBF0F02-2909-4086-A608-C5EA1E42A9F6}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../EA96.htm">NAP Functional View - Data Platform</a>, <a href="../../EA5/EA227.htm">NAP Physical View - Data Platform</a>, <a href="../../EA6/EA265.htm">NAP Communication View - Data Platform</a></td>
+			<td class="ObjectDetailsValue"><a href="../EA96.htm">NAP Functional View - Data Platform</a>, <a href="../../EA5/EA226.htm">NAP Physical View - Data Platform</a>, <a href="../../EA6/EA264.htm">NAP Communication View - Data Platform</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">The generic terminator role Data Provision System represents any interested entity in traffic, travel data storage. The Data Provision System can request storing traffic and travel data in the NAP Data store. Therefore, Function F3.6.8 Manage Data Input offers an access interface for machine-to-machine data upload.&#160;&#160;Authorisation is necessary, the Data Provision System must use credentials obtained by Content Provider. When registering the Content Provider will obtain credentials and / or to set up a machine account from which data are pushed.&#160;&#160;&#160;&#160;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Key issue&lt;/b&gt;: Request to store data at NAP.&#160;&#160;&lt;br/&gt;&lt;b&gt;Area of responsibility&lt;/b&gt;: Be compliant with the agreement with content provider&#160;&#160;&lt;br/&gt;&lt;b&gt;Tasks&lt;/b&gt;: Upload content&#160;&#160;&#160;&lt;br/&gt;&lt;b&gt;Mnemonic&lt;/b&gt;: nap.dps &lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">The generic terminator role Data Requesting System represents any interested entity in traffic, travel data. The Data Requesting System can request traffic and travel data available in the NAP Data store. Therefore, Function F3.6.9 Manage NAP Data Retrieval offers a data distribution interface for machine-to-machine data retrieval.&#160;&#160;&#160;&lt;br/&gt;In some cases, especially when the data are pushed to the Content Consumer systems and / or authorisation is necessary the Data Requesting System must use credentials obtained by Content Consumer. When registering the Content Consumer will obtain credentials and / or to set up a machine account to which data are pushed.&#160;&#160;&#160;&#160;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Key issue&lt;/b&gt;: Request data stored at NAP.&#160;&#160;&lt;br/&gt;&lt;b&gt;Area of responsibility&lt;/b&gt;: Be compliant with the agreement with content provider&#160;&#160;&lt;br/&gt;&lt;b&gt;Tasks&lt;/b&gt;: Receive content&#160;&#160;&#160;&lt;br/&gt;&lt;b&gt;Mnemonic&lt;/b&gt;: nap.drs&#160;&#160;&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
@@ -112,7 +112,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA3/EA1/EA135.htm">«FRAME_Low_Level_Data_Flow» fnap.dps-data_&_authorisation_credentials</a><br />
+						<a href="../EA3/EA1/EA135.htm">«FRAME_Low_Level_Data_Flow» fnap.drs-data_request</a><br />
 						FRAME_Low_Level_Data_Flow «IN» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -126,8 +126,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink238" onclick="parent.toggleDiv('detailsDIVLink238','DetailsImageLink238')" />Details:
-							<div id="detailsDIVLink238" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink240" onclick="parent.toggleDiv('detailsDIVLink240','DetailsImageLink240')" />Details:
+							<div id="detailsDIVLink240" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -145,7 +145,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA3/EA1/EA159.htm">«FRAME_Low_Level_Data_Flow» tnap.dps-data_upload_result_report</a><br />
+						<a href="../EA3/EA1/EA159.htm">«FRAME_Low_Level_Data_Flow» tnap.drs-data_response</a><br />
 						FRAME_Low_Level_Data_Flow «OUT» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -159,8 +159,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink239" onclick="parent.toggleDiv('detailsDIVLink239','DetailsImageLink239')" />Details:
-							<div id="detailsDIVLink239" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink241" onclick="parent.toggleDiv('detailsDIVLink241','DetailsImageLink241')" />Details:
+							<div id="detailsDIVLink241" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -202,7 +202,7 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA5/EA3/EA247.htm">«FRAME_Physical_Data_Flow» PDF Data from Data Provision System</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA5/EA3/EA249.htm">«FRAME_Physical_Data_Flow» Data to Data Requesting System</a></td>
 					<td width="10%" class="TableRow" valign="top">FRAME_Physical_Data_Flow</td>
 					<td width="10%" class="TableRow" valign="top">Usage</td>
 					<td width="10%" class="TableRow" valign="top">To</td>

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Interfaces::Metadata Provision System - Metadata Management Module</title>
+<title>Interfaces::Machine Metadata Provision</title>
 <link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,7 +34,7 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("Metadata Provision System - Metadata Management Module", " : "))</script>  : Public abstract &lt;&lt;FRAME_Interface&gt;&gt; FRAME_Interface</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("Machine Metadata Provision", " : "))</script>  : Public abstract &lt;&lt;FRAME_Interface&gt;&gt; FRAME_Interface</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
@@ -42,7 +42,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">10.02.2025 15:26:55</td>
+			<td class="ObjectDetailsValue">13.06.2025 18:13:32</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -91,17 +91,21 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../EA265.htm">NAP Communication View - Data Platform</a>, <a href="../EA263.htm">NAP Communication View - Metadata Directory</a></td>
+			<td class="ObjectDetailsValue"><a href="../EA264.htm">NAP Communication View - Data Platform</a>, <a href="../EA262.htm">NAP Communication View - Metadata Directory</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">&lt;b&gt;Type&lt;/b&gt;: Programming Interface&lt;br/&gt;&lt;b&gt;Short description&lt;/b&gt;: Automatic provision of metadata via machine-to-machine interface&lt;br/&gt;&lt;b&gt;Contextual Use&lt;/b&gt;: The receive or harvest metadata via machine-to-machine interface aims to harvest existing compatible metadata in a machine-readable format via manual or automatic request.&lt;br/&gt;&lt;font color=&quot;#ff0000&quot;&gt;On a broad level from other data platforms or from a single metadata entry.&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#ff0000&quot;&gt;Prerequisite is the support of the metadata exchange on both sites.&lt;/font&gt;&lt;br/&gt;&lt;b&gt;Related Documents&lt;/b&gt;: https://napcore.eu/activity-wg2-interoperability-and-level-of-service-of-naps/&lt;br/&gt;=== Communications Requirements ===&lt;br/&gt;As a guideline for minimum expectation the following values can be used&lt;br/&gt;&lt;b&gt;Data type&lt;/b&gt;: &lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;Raw data&lt;/li&gt;&lt;/ul&gt;<br />&lt;b&gt;max bytes per message&lt;/b&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;up to 500 kBytes for meta data&lt;/li&gt;&lt;/ul&gt;<br />&lt;b&gt;maximum delay [s]&lt;/b&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;system response time below 100ms (independent from user internet connection)&#160;&#160;&lt;/li&gt;&lt;/ul&gt;<br />&lt;b&gt;message interval&lt;/b&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;one second - assumption that 1 system request metadata&lt;/li&gt;&lt;/ul&gt;<br />&lt;b&gt;security level&lt;/b&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;level TODO&lt;/li&gt;&lt;/ul&gt;&lt;p/&gt;</div>
+	<div class="ObjectDetailsNotes">&lt;b&gt;Identification: &lt;/b&gt;mdPS - mdMM; Metadata Provision System - Metadata Management Module&lt;br/&gt;&lt;b&gt;Type&lt;/b&gt;: Programming Interface&lt;br/&gt;&lt;b&gt;Description: &lt;/b&gt;This interface is used by content consumer system to automatically insert, modify or delete metadata at NAP. The interface must allow authorised access. The Interface shall be an API based application that any compatible system could access. It should support metadata standard mobilityDCAT-AP&lt;br/&gt;&lt;b&gt;Related Documents&lt;/b&gt;: &lt;a href=&quot;file://https://napcore.eu/activity-wg2-interoperability-and-level-of-service-of-naps/&quot;&gt;&lt;font color=&quot;#467886&quot;&gt;&lt;u&gt;https://napcore.eu/activity-wg2-interoperability-and-level-of-service-of-naps/&lt;/u&gt;&lt;/font&gt;&lt;/a&gt; &lt;br/&gt;=== Communications Requirements ===&lt;br/&gt;&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('LinkedDocument');" id="LinkedDocumentTitle">Linked Document</li>
 			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
 			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
 			<li onClick="parent.toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
 		</ul>
+		<div class="ItemBody" id="LinkedDocumentTable">
+			<iframe src="../../../linkdocs/EAID_70F2112F_B845_4d29_AECD_17CD9D7B4B7D.htm" frameborder="0" id="linkDocIFrame"></iframe>
+		</div>
 		<div class="ItemBody" id="AssociationsFromTable">
 			<table border="0" cellspacing="0" cellpadding="0" class="Table">
 				<tr>
@@ -111,7 +115,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA5/EA3/EA254.htm">«FRAME_Physical_Data_Flow» PDF Metadata from Metadata Provision System</a><br />
+						<a href="../../EA5/EA3/EA253.htm">«FRAME_Physical_Data_Flow» Metadata from Metadata Provision System</a><br />
 						FRAME_Physical_Data_Flow «use» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -125,8 +129,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink719" onclick="parent.toggleDiv('detailsDIVLink719','DetailsImageLink719')" />Details:
-							<div id="detailsDIVLink719" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink720" onclick="parent.toggleDiv('detailsDIVLink720','DetailsImageLink720')" />Details:
+							<div id="detailsDIVLink720" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -147,8 +151,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario720" onclick="parent.toggleDiv('detailsDIVScenario720','DetailsImageScenario720')" />Details:
-						<div id="detailsDIVScenario720" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario721" onclick="parent.toggleDiv('detailsDIVScenario721','DetailsImageScenario721')" />Details:
+						<div id="detailsDIVScenario721" class="DetailsDiv" >
 						&nbsp;
 						</div>
 					</div>

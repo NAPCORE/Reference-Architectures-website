@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Low Level FDFs::fnap.cc-data_request</title>
+<title>Low Level FDFs::fnap.cc-registration_request</title>
 <link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("fnap.cc-data_request", " : "))</script> fnap.cc-data request : Public abstract &lt;&lt;FRAME_Low_Level_Data_Flow&gt;&gt; FRAME_Low_Level_Data_Flow</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("fnap.cc-registration_request", " : "))</script> fnap.cc-registration request : Public abstract &lt;&lt;FRAME_Low_Level_Data_Flow&gt;&gt; FRAME_Low_Level_Data_Flow</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">30.08.2021 16:18:41</td>
+			<td width="85%" class="ObjectDetailsValue">30.08.2023 13:00:00</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">14.01.2025 22:46:44</td>
+			<td class="ObjectDetailsValue">14.01.2025 22:46:45</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,14 +87,14 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{AFB3FDE3-5682-463a-A966-CEF77741C6A9}</td>
+			<td class="ObjectDetailsValue">{7777AD14-8D53-466c-9949-22CFAB635676}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../../EA96.htm">NAP Functional View - Data Platform</a></td>
+			<td class="ObjectDetailsValue"><a href="../../EA94.htm">NAP Functional View - Metadata Directory</a>, <a href="../../EA96.htm">NAP Functional View - Data Platform</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">It consists of inputs from the NAP Content Consumer containing data objects that provide request for retrieval of traffic or travel data stored in NAP Data store. Besides the identification of data to be retrieved the request must contain the authorisation credentials of the entity that is providing it, so that this can be checked to ensure that it is a registered entity with right to access the data.&#160;&#160;&lt;br/&gt;&lt;br/&gt;NOTE: authorisation credentials might be void if the data to be retrieved are freely available (i.e. open data)&#160;&#160;&#160;&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">It consists of inputs from the NAP Content Consumer containing data objects that provide a registration request of and information about a potential NAP Content Consumer which wants to register or a request with credentials of registered NAP Content Consumer for retrieval of its data upon a successful authorisation. (Details of the information about the NAP Content Consumer will be found in the description of the store of NAP Users).&#160;&#160;&lt;br/&gt;The registration request contains relevant information about the entity to be registered under NAP Content Consumer account, including identity information, licence terms approval, users, machines, and organization information.&#160;&#160;&lt;br/&gt;&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
@@ -111,7 +111,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA1/EA1/EA117.htm">«FRAME_Low_Level_Function» F3.6.9 Manage NAP Data Retrieval</a><br />
+						<a href="../../EA1/EA1/EA109.htm">«FRAME_Low_Level_Function» F3.6.2 Manage Registrations and Provide Authorisation Service</a><br />
 						FRAME_Low_Level_Function «OUT» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -125,8 +125,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink274" onclick="parent.toggleDiv('detailsDIVLink274','DetailsImageLink274')" />Details:
-							<div id="detailsDIVLink274" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink277" onclick="parent.toggleDiv('detailsDIVLink277','DetailsImageLink277')" />Details:
+							<div id="detailsDIVLink277" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -134,7 +134,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../../EA5/EA3/EA249.htm">«FRAME_Physical_Data_Flow» PDF Data to Content Consumer</a><br />
+						<a href="../../../EA5/EA3/EA244.htm">«FRAME_Physical_Data_Flow» Content Consumer Authorization and Registration</a><br />
 						FRAME_Physical_Data_Flow «served by» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -148,8 +148,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink275" onclick="parent.toggleDiv('detailsDIVLink275','DetailsImageLink275')" />Details:
-							<div id="detailsDIVLink275" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink278" onclick="parent.toggleDiv('detailsDIVLink278','DetailsImageLink278')" />Details:
+							<div id="detailsDIVLink278" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -167,8 +167,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA2/EA126.htm">«FRAME_Terminator» NAP Content Consumer</a><br />
-						FRAME_Terminator «OUT» 
+						<a href="../../EA2/EA125.htm">«FRAME_Terminator» NAP Content Consumer</a><br />
+						FRAME_Terminator «IN» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
 						<strong>Name:</strong> &nbsp;<br />
@@ -181,8 +181,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink276" onclick="parent.toggleDiv('detailsDIVLink276','DetailsImageLink276')" />Details:
-							<div id="detailsDIVLink276" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink279" onclick="parent.toggleDiv('detailsDIVLink279','DetailsImageLink279')" />Details:
+							<div id="detailsDIVLink279" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
