@@ -1,6 +1,6 @@
 ---
 model_name: NB Reference Architecture
-version: 5.5.1rev20240210
+version: 1.0.0
 target_url: ../assets/uml_models/nb_architecture/index.htm
 ---
 
@@ -8,16 +8,27 @@ National Body / Competent Authority (NB) Reference architecture  the aims to har
 
 ## Browsable HTML UML model
 
+
+
+## ChangeLog
+
+### Version 1.0.0 
+
+- see the [changelog file](../assets/docs/changelog-nb.txt)
+
+
+## Browse online
+
+Explore current version of the NB Reference architecture model in your web browser.
+
 [{{page.meta.model_name}} version {{page.meta.version}}]({{page.meta.target_url}}){ .md-button }
 
 !!! note
 
     The {{page.meta.model_name}} is a live document, it deviates from the FRAME repository since it provides much greater detail. 
+	
+## Follow us on GitHub
 
-## ChangeLog
+Report an issue, download the latest version of the model or of the NB Reference architecture documents or guidelines.
 
-### Version 5.1.1rev20250210 
-
-- see the [changelog file](../assets/docs/changelog-nb.txt)
-
-
+[{{page.meta.model_name}} GitHub](https://github.com/NAPCORE/NB-Reference-Architecture){ .md-button }

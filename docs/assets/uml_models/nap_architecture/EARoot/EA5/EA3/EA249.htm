@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Physical Dataflows::PDF Data to Content Consumer</title>
+<title>Physical Dataflows::Data to Data Requesting System</title>
 <link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("PDF Data to Content Consumer", " : "))</script>  : Public abstract &lt;&lt;FRAME_Physical_Data_Flow&gt;&gt; FRAME_Physical_Data_Flow</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("Data to Data Requesting System", " : "))</script>  : Public abstract &lt;&lt;FRAME_Physical_Data_Flow&gt;&gt; FRAME_Physical_Data_Flow</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">01.12.2021 10:21:18</td>
+			<td width="85%" class="ObjectDetailsValue">10.10.2023 15:12:59</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">14.01.2025 1:03:58</td>
+			<td class="ObjectDetailsValue">11.06.2025 14:02:25</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,14 +87,14 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{B82B3A07-B464-4905-B517-04B74942E5AA}</td>
+			<td class="ObjectDetailsValue">{F785EA75-B3BD-4be6-9374-06DC89A98B73}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../EA227.htm">NAP Physical View - Data Platform</a>, <a href="../../EA6/EA265.htm">NAP Communication View - Data Platform</a></td>
+			<td class="ObjectDetailsValue"><a href="../EA226.htm">NAP Physical View - Data Platform</a>, <a href="../../EA6/EA264.htm">NAP Communication View - Data Platform</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">This Physical Data Flow facilitates information exchange between Data Management Module and Content Consumer. This exchange concerns requests from the NAP Content Consumer for data content and responses with data if the authorisation is successful. &lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">This Physical Data Flow facilitates information exchange between Data Requesting System and NAP Data Management Module. This exchange concerns requests from the Data Requesting System for data content and responses with data if the authorisation is successful.&#160;&#160;&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
@@ -112,7 +112,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA6/EA1/EA271.htm">«FRAME_Interface» Content Consumer - Data Management Module</a><br />
+						<a href="../../EA6/EA1/EA278.htm">«FRAME_Interface» Machine Data Access</a><br />
 						FRAME_Interface «use» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -126,8 +126,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink645" onclick="parent.toggleDiv('detailsDIVLink645','DetailsImageLink645')" />Details:
-							<div id="detailsDIVLink645" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink647" onclick="parent.toggleDiv('detailsDIVLink647','DetailsImageLink647')" />Details:
+							<div id="detailsDIVLink647" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -145,7 +145,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA3/EA1/EA156.htm">«FRAME_Low_Level_Data_Flow» tnap.cc-data_response</a><br />
+						<a href="../../EA3/EA3/EA1/EA159.htm">«FRAME_Low_Level_Data_Flow» tnap.drs-data_response</a><br />
 						FRAME_Low_Level_Data_Flow «served by» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -159,8 +159,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink646" onclick="parent.toggleDiv('detailsDIVLink646','DetailsImageLink646')" />Details:
-							<div id="detailsDIVLink646" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink648" onclick="parent.toggleDiv('detailsDIVLink648','DetailsImageLink648')" />Details:
+							<div id="detailsDIVLink648" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -168,7 +168,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA3/EA1/EA132.htm">«FRAME_Low_Level_Data_Flow» fnap.cc-data_request</a><br />
+						<a href="../../EA3/EA3/EA1/EA135.htm">«FRAME_Low_Level_Data_Flow» fnap.drs-data_request</a><br />
 						FRAME_Low_Level_Data_Flow «served by» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -182,8 +182,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink647" onclick="parent.toggleDiv('detailsDIVLink647','DetailsImageLink647')" />Details:
-							<div id="detailsDIVLink647" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink649" onclick="parent.toggleDiv('detailsDIVLink649','DetailsImageLink649')" />Details:
+							<div id="detailsDIVLink649" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -215,14 +215,14 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../EA2/EA238.htm">«FRAME_Application» Data Management Module</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA2/EA237.htm">«FRAME_Application» Data Management Module</a></td>
 					<td width="10%" class="TableRow" valign="top">FRAME_Application</td>
 					<td width="10%" class="TableRow" valign="top">Usage</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA3/EA2/EA126.htm">«FRAME_Terminator» NAP Content Consumer</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA3/EA2/EA121.htm">«FRAME_Terminator» Data Requesting System</a></td>
 					<td width="10%" class="TableRow" valign="top">FRAME_Terminator</td>
 					<td width="10%" class="TableRow" valign="top">Usage</td>
 					<td width="10%" class="TableRow" valign="top">From</td>

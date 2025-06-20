@@ -15,18 +15,11 @@
 	- __Communications view__: This describes the interaction and data exchange between the different components of the system.
 	- __Organizational (enterprise) view__: This describes the relationships between actors in the system.
 
-## National Access Point Reference Architecture
+## National Access Point (NAP) and National Body (NB) Reference Architectures
 
 <div class="grid cards" markdown>
--  :material-database-search-outline: Explore UML model of __NAP Reference Architecture__ including change log [:octicons-arrow-right-24:](uml/nap_architecture.md)
--  :material-bug-outline: Report an __issue__ or download latest NAP versions on __GitHub__ [:octicons-arrow-right-24:](https://github.com/NAPCORE/NAP-Reference-Architecture/issues)
-</div>
-
-## National Body Reference Architecture
-
-<div class="grid cards" markdown>
--  :material-database-search-outline: Explore UML model of __NB Reference Architecture__ including change log [:octicons-arrow-right-24:](uml/nb_architecture.md)
--  :material-bug-outline: Report an __issue__ or download latest NB versions on __GitHub__ [:octicons-arrow-right-24:](https://github.com/NAPCORE/NB-Reference-Architecture/issues)
+-  :material-database-search-outline: Explore UML model of __NAP Reference Architecture__ [:octicons-arrow-right-24:](uml/nap_architecture.md)
+-  :material-database-search-outline: Explore UML model of __NB Reference Architecture__ [:octicons-arrow-right-24:](uml/nb_architecture.md)
 
 </div>
 

@@ -1,0 +1,3 @@
+tocTab[tocTab.length] = new Array("0.7.2:1", "", "Glossary", "EARoot/EA7/EA2/EA296.htm", "175.png", "13", "0", "", "Logical diagram0","{8BDC6624-1093-D6EC-BD73-52CDCEF13D1E}");
+tocTab[tocTab.length] = new Array("0.7.2.1", "1", "«GlossaryCategory» Abbreviations", "EARoot/EA7/EA2/EA1/EA303.htm", "4.png", "", "", "{D7346BB1-36A3-4f9a-A435-6C2749E110DF}", "Package");
+tocTab[tocTab.length] = new Array("0.7.2.2", "1", "«GlossaryCategory» Definitions", "EARoot/EA7/EA2/EA2/EA314.htm", "4.png", "", "", "{AF43B953-7CE0-0D09-AD06-6AB5DDDFC7DF}", "Package");

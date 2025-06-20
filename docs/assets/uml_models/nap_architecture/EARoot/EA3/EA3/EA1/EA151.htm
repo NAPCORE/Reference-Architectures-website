@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Low Level FDFs::mt_NAP_metadata_for_quality_check</title>
+<title>Low Level FDFs::mt_NAP_metadata_quality_check_result</title>
 <link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("mt_NAP_metadata_for_quality_check", " : "))</script> mt_NAP metadata for quality check : Public abstract &lt;&lt;FRAME_Low_Level_Data_Flow&gt;&gt; FRAME_Low_Level_Data_Flow</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("mt_NAP_metadata_quality_check_result", " : "))</script> mt_NAP metadata quality check result : Public abstract &lt;&lt;FRAME_Low_Level_Data_Flow&gt;&gt; FRAME_Low_Level_Data_Flow</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">30.08.2023 13:35:12</td>
+			<td width="85%" class="ObjectDetailsValue">30.08.2023 13:35:19</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">14.01.2025 22:46:45</td>
+			<td class="ObjectDetailsValue">21.03.2025 14:57:09</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,20 +87,21 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{EB72DA4A-A638-4946-B10F-21C536686F6C}</td>
+			<td class="ObjectDetailsValue">{01233765-5DC4-4cf9-879E-4DC6961C9611}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
 			<td class="ObjectDetailsValue"><a href="../../EA94.htm">NAP Functional View - Metadata Directory</a>, <a href="../../EA96.htm">NAP Functional View - Data Platform</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">It contains data objects with the metadata information that has been retrieved from the store of NAP Metadata following a scheduled or triggered event. The data object also contains quality information that is to be updated after the quality check of the retrieved metadata content.&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">It contains data objects created by Provide Metadata Quality Checks after checking quality of metadata that has been retrieved from the store of NAP Metadata following a scheduled or triggered event. The data is timestamp and success of failure (with number of errors found, level of service achieved) of the checks and overall aggregated summary. The checks follow the MQA and InQMS methodology, at minimum it is an availability of the urls provided in metadata. &lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
 			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
 			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
 			<li onClick="parent.toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
+			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
 		<div class="ItemBody" id="AssociationsToTable">
 			<table border="0" cellspacing="0" cellpadding="0" class="Table">
@@ -111,7 +112,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA1/EA1/EA114.htm">«FRAME_Low_Level_Function» F3.6.6 Provide Metadata Quality Checks</a><br />
+						<a href="../../EA1/EA1/EA107.htm">«FRAME_Low_Level_Function» F3.6.1 Manage NAP Metadata Repository</a><br />
 						FRAME_Low_Level_Function «OUT» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -125,8 +126,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink326" onclick="parent.toggleDiv('detailsDIVLink326','DetailsImageLink326')" />Details:
-							<div id="detailsDIVLink326" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink329" onclick="parent.toggleDiv('detailsDIVLink329','DetailsImageLink329')" />Details:
+							<div id="detailsDIVLink329" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -134,7 +135,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../../EA5/EA3/EA255.htm">«FRAME_Physical_Data_Flow» PDF Metadata Quality Check</a><br />
+						<a href="../../../EA5/EA3/EA254.htm">«FRAME_Physical_Data_Flow» Metadata Quality Check</a><br />
 						FRAME_Physical_Data_Flow «served by» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -148,8 +149,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink327" onclick="parent.toggleDiv('detailsDIVLink327','DetailsImageLink327')" />Details:
-							<div id="detailsDIVLink327" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink330" onclick="parent.toggleDiv('detailsDIVLink330','DetailsImageLink330')" />Details:
+							<div id="detailsDIVLink330" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -167,7 +168,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA1/EA1/EA108.htm">«FRAME_Low_Level_Function» F3.6.1 Manage NAP Metadata Repository</a><br />
+						<a href="../../EA1/EA1/EA113.htm">«FRAME_Low_Level_Function» F3.6.6 Provide Metadata Quality Checks</a><br />
 						FRAME_Low_Level_Function «IN» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -181,8 +182,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink328" onclick="parent.toggleDiv('detailsDIVLink328','DetailsImageLink328')" />Details:
-							<div id="detailsDIVLink328" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink331" onclick="parent.toggleDiv('detailsDIVLink331','DetailsImageLink331')" />Details:
+							<div id="detailsDIVLink331" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -204,7 +205,26 @@ function nameClassifier(name, separator)
 
 
 			</table>
-		</div>	</div>
+		</div>		<div class="ItemBody" id="LinksTable">
+			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA7/EA6/EA1/EA669.htm">DF F3.6.6 -> F3.6.1</a></td>
+					<td width="10%" class="TableRow" valign="top">Issue</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
 <div class="pageFooter"></div>
  
 </body>

@@ -1,0 +1,4 @@
+tocTab[tocTab.length] = new Array("0.7.1:1", "", "Requirements", "EARoot/EA7/EA1/EA290.htm", "175.png", "12", "0", "", "Logical diagram0","{8AB1346C-0CB1-4fc5-9B82-E8F30B4AE997}");
+tocTab[tocTab.length] = new Array("0.7.1:2", "", "«FRAME_Requirement» S AFIR 1 data provision ", "EARoot/EA7/EA1/EA293.htm", "19.png", "E238", "0", "", "Requirement0","{72FBCD3D-6D85-4f36-8BB3-35793BE45D17}");
+tocTab[tocTab.length] = new Array("0.7.1:3", "", "«FRAME_Requirement» S AFIR 2 Accessibility of metadata interface", "EARoot/EA7/EA1/EA294.htm", "19.png", "E239", "0", "", "Requirement0","{E8C270E4-16AE-43cd-A90E-B2B763812681}");
+tocTab[tocTab.length] = new Array("0.7.1:4", "", "«FRAME_Requirement» S AFIR 3 data interface", "EARoot/EA7/EA1/EA295.htm", "19.png", "E237", "0", "", "Requirement0","{52D53B95-6C9E-4295-B876-9EAE9CD78D07}");

@@ -1,6 +1,6 @@
 ---
 model_name: NAP Reference Architecture
-version: 5.5.1rev20250210
+version: 2.0.0-draft (2025-06-13)
 target_url: ../assets/uml_models/nap_architecture/index.htm
 ---
 
@@ -9,18 +9,21 @@ National Access Point (NAP) Reference architecture aims to harmonize NAP activit
 - Metadata directory and 
 - Data platform
 
-## Browsable HTML UML model
+## Browse online
+
+Explore current version of the NAP Reference architecture model in your web browser.
 
 [{{page.meta.model_name}} version {{page.meta.version}}]({{page.meta.target_url}}){ .md-button }
 
 !!! note
 
     The {{page.meta.model_name}} is a live document, it deviates from the FRAME repository since it provides much greater detail. 
+	
+## Follow us on GitHub
 
-## ChangeLog
+Report an issue, download the latest version of the model or of the NAP Reference architecture documents or guidelines.
 
-### Version 5.1.1rev20250210 
+[{{page.meta.model_name}} GitHub](https://github.com/NAPCORE/NAP-Reference-Architecture/){ .md-button }
 
-- see the [changelog file](../assets/docs/changelog-nap.txt)
 
 
