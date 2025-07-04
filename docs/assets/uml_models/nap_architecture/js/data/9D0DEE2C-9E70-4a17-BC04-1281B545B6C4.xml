@@ -1,0 +1,2 @@
+tocTab[tocTab.length] = new Array("0.7.7:1", "", "NAP Documentation", "EARoot/EA7/EA7/EA744.htm", "175.png", "2196", "0", "", "Logical diagram0","{82E88FF4-037B-4bdf-B935-B0E55AE680F2}");
+tocTab[tocTab.length] = new Array("0.7.7.1", "1", "«master document» National Access Point Reference Architecture", "EARoot/EA7/EA7/EA1/EA750.htm", "4.png", "", "", "{8F058164-8E93-4d6f-A82B-37A533ED72AD}", "Package");

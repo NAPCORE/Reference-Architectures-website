@@ -1,0 +1,7 @@
+tocTab[tocTab.length] = new Array("0.7.4.3:1", "", "Draft - Planed for 12.2025", "EARoot/EA7/EA4/EA3/EA629.htm", "52.png", "E150046", "0", "", "Issue0","{2B0D3CC8-A31F-4546-95C0-CC8534984F4E}");
+tocTab[tocTab.length] = new Array("0.7.4.3:2", "", "Element missing", "EARoot/EA7/EA4/EA3/EA630.htm", "52.png", "E150047", "0", "", "Issue0","{3EDC5D6D-FB7D-4d3b-8B5D-30879024C53B}");
+tocTab[tocTab.length] = new Array("0.7.4.3:3", "", "Functionality Missing", "EARoot/EA7/EA4/EA3/EA631.htm", "52.png", "E150045", "0", "", "Issue0","{0FDDF4FC-1D13-4013-B1B4-51667FE8F776}");
+tocTab[tocTab.length] = new Array("0.7.4.3:4", "", "Issue: Agreement Missing", "EARoot/EA7/EA4/EA3/EA632.htm", "52.png", "E150051", "0", "", "Issue0","{CE7A9755-57B2-4f08-8288-D04B0A5D68A2}");
+tocTab[tocTab.length] = new Array("0.7.4.3:5", "", "Missing Obligation MS-CP", "EARoot/EA7/EA4/EA3/EA633.htm", "52.png", "E150048", "0", "", "Issue0","{8805FF3C-3A28-4e3d-999A-FFDF903C8E19}");
+tocTab[tocTab.length] = new Array("0.7.4.3:6", "", "Revision after new TAP TSI is published", "EARoot/EA7/EA4/EA3/EA634.htm", "52.png", "E150049", "0", "", "Issue0","{88B469C2-A3CF-47ab-8972-7EB0E96665D6}");
+tocTab[tocTab.length] = new Array("0.7.4.3:7", "", "Revision needed in NAPCORE", "EARoot/EA7/EA4/EA3/EA635.htm", "52.png", "E150050", "0", "", "Issue0","{9227DA58-B8A6-419f-BB56-A90F3950CF28}");

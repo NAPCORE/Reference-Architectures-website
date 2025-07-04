@@ -1,0 +1,8 @@
+tocTab[tocTab.length] = new Array("0.7.2.1:1", "", "KPI Framework Requirements", "EARoot/EA7/EA2/EA1/EA344.htm", "178.png", "2171", "0", "", "Component diagram0","{D5957FBB-9CB4-43a0-86C4-FBED22ED03E5}");
+tocTab[tocTab.length] = new Array("0.7.2.1.1", "1", "K.1", "EARoot/EA7/EA2/EA1/EA1/EA354.htm", "4.png", "", "", "{AB4DDAFD-0E04-418a-95AF-20518BE7F69E}", "Package");
+tocTab[tocTab.length] = new Array("0.7.2.1.2", "1", "K.2", "EARoot/EA7/EA2/EA1/EA2/EA374.htm", "4.png", "", "", "{E3DBACF9-4E44-4d7c-A8A7-93D6B314784B}", "Package");
+tocTab[tocTab.length] = new Array("0.7.2.1.3", "1", "K.3", "EARoot/EA7/EA2/EA1/EA3/EA378.htm", "4.png", "", "", "{1C8421BE-4A4B-4c12-884C-AD96EC080A39}", "Package");
+tocTab[tocTab.length] = new Array("0.7.2.1.4", "1", "K.4", "EARoot/EA7/EA2/EA1/EA4/EA382.htm", "4.png", "", "", "{35A27180-9411-4c9d-BE37-860CA7BC2508}", "Package");
+tocTab[tocTab.length] = new Array("0.7.2.1.5", "1", "K.5", "EARoot/EA7/EA2/EA1/EA5/EA386.htm", "4.png", "", "", "{6D7EE707-C90A-49e6-AF9E-FDFC4F986BE4}", "Package");
+tocTab[tocTab.length] = new Array("0.7.2.1.6", "1", "K.6", "EARoot/EA7/EA2/EA1/EA6/EA392.htm", "4.png", "", "", "{0DE00589-00C6-4eda-813F-15F539ED8FA1}", "Package");
+tocTab[tocTab.length] = new Array("0.7.2.1.7", "1", "K.7", "EARoot/EA7/EA2/EA1/EA7/EA395.htm", "4.png", "", "", "{246631BC-F949-463d-8410-E0936F42D21B}", "Package");

@@ -1,8 +1,8 @@
-tocTab[tocTab.length] = new Array("0.7.5:1", "", "_Exchange restricted content", "EARoot/EA7/EA5/EA547.htm", "175.png", "33", "0", "", "Logical diagram0","{1FF27FA9-DEA1-433f-9BB4-54CAE4A31263}");
-tocTab[tocTab.length] = new Array("0.7.5:2", "", "Exchange content", "EARoot/EA7/EA5/EA549.htm", "175.png", "27", "0", "", "Logical diagram0","{A9E910FF-3F54-4774-9785-53C52068B698}");
-tocTab[tocTab.length] = new Array("0.7.5:3", "", "Maintain the NAP", "EARoot/EA7/EA5/EA551.htm", "175.png", "28", "0", "", "Logical diagram0","{BF21C888-02C8-4a23-A19C-E0A5BBB23FBD}");
-tocTab[tocTab.length] = new Array("0.7.5:4", "", "Manage metadata repository", "EARoot/EA7/EA5/EA553.htm", "175.png", "29", "0", "", "Logical diagram0","{8C173834-934B-43b2-882E-C8A6132BE90E}");
-tocTab[tocTab.length] = new Array("0.7.5:5", "", "Promote the NAP", "EARoot/EA7/EA5/EA555.htm", "175.png", "32", "0", "", "Logical diagram0","{151F2E89-C04A-4790-B389-C78D89635628}");
-tocTab[tocTab.length] = new Array("0.7.5:6", "", "Register user", "EARoot/EA7/EA5/EA557.htm", "175.png", "30", "0", "", "Logical diagram0","{1F753292-0D9A-49cf-8A2F-D28FDFEA4911}");
-tocTab[tocTab.length] = new Array("0.7.5:7", "", "Support user", "EARoot/EA7/EA5/EA559.htm", "175.png", "31", "0", "", "Logical diagram0","{24AEA396-6A1B-418e-AC07-F09F891CD5AC}");
-tocTab[tocTab.length] = new Array("0.7.5.1", "1", "Objects", "EARoot/EA7/EA5/EA1/EA563.htm", "4.png", "", "", "{89CFC15D-DC27-4b7c-BD99-8F7FF58B0C4F}", "Package");
+tocTab[tocTab.length] = new Array("0.7.6:1", "", "_Exchange restricted content", "EARoot/EA7/EA6/EA641.htm", "175.png", "2195", "0", "", "Logical diagram0","{1FF27FA9-DEA1-433f-9BB4-54CAE4A31263}");
+tocTab[tocTab.length] = new Array("0.7.6:2", "", "Exchange content", "EARoot/EA7/EA6/EA643.htm", "175.png", "2189", "0", "", "Logical diagram0","{A9E910FF-3F54-4774-9785-53C52068B698}");
+tocTab[tocTab.length] = new Array("0.7.6:3", "", "Maintain the NAP", "EARoot/EA7/EA6/EA645.htm", "175.png", "2190", "0", "", "Logical diagram0","{BF21C888-02C8-4a23-A19C-E0A5BBB23FBD}");
+tocTab[tocTab.length] = new Array("0.7.6:4", "", "Manage metadata repository", "EARoot/EA7/EA6/EA647.htm", "175.png", "2191", "0", "", "Logical diagram0","{8C173834-934B-43b2-882E-C8A6132BE90E}");
+tocTab[tocTab.length] = new Array("0.7.6:5", "", "Promote the NAP", "EARoot/EA7/EA6/EA649.htm", "175.png", "2194", "0", "", "Logical diagram0","{151F2E89-C04A-4790-B389-C78D89635628}");
+tocTab[tocTab.length] = new Array("0.7.6:6", "", "Register user", "EARoot/EA7/EA6/EA651.htm", "175.png", "2192", "0", "", "Logical diagram0","{1F753292-0D9A-49cf-8A2F-D28FDFEA4911}");
+tocTab[tocTab.length] = new Array("0.7.6:7", "", "Support user", "EARoot/EA7/EA6/EA653.htm", "175.png", "2193", "0", "", "Logical diagram0","{24AEA396-6A1B-418e-AC07-F09F891CD5AC}");
+tocTab[tocTab.length] = new Array("0.7.6.1", "1", "Objects", "EARoot/EA7/EA6/EA1/EA657.htm", "4.png", "", "", "{89CFC15D-DC27-4b7c-BD99-8F7FF58B0C4F}", "Package");

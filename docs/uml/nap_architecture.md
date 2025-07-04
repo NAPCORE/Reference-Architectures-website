@@ -1,6 +1,6 @@
 ---
 model_name: NAP Reference Architecture
-version: 2.0.0-draft (2025-06-13)
+version: 2.0.0 (2025-07-04)
 target_url: ../assets/uml_models/nap_architecture/index.htm
 ---
 

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Metadata Requesting System</title>
+<title>Metadata Provision System</title>
 <link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("Metadata Requesting System", " : "))</script>  : Public  &lt;&lt;FRAME_Terminator&gt;&gt; FRAME_Terminator</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("Metadata Provision System", " : "))</script>  : Public  &lt;&lt;FRAME_Terminator&gt;&gt; FRAME_Terminator</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">13.07.2023 14:18:26</td>
+			<td width="85%" class="ObjectDetailsValue">20.11.2024 14:58:38</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">29.09.2024 0:41:46</td>
+			<td class="ObjectDetailsValue">27.06.2025 17:07:02</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -51,15 +51,15 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="proj00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
-			<td class="ObjectDetailsValue">bures</td>
+			<td class="ObjectDetailsValue">Benjamin.Witsch</td>
 		</tr>
 		<tr id="proj01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
-			<td class="ObjectDetailsValue"></td>
+			<td class="ObjectDetailsValue">1.0</td>
 		</tr>
 		<tr id="proj02" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
-			<td class="ObjectDetailsValue"></td>
+			<td class="ObjectDetailsValue">1.0</td>
 		</tr>
 		<tr id="proj03" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
@@ -87,14 +87,14 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{DEB4AC48-7332-4f57-99D5-79169FCA6F1F}</td>
+			<td class="ObjectDetailsValue">{0DEEF50F-C3BA-4005-A27B-57A30C4C009C}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../EA94.htm">NAP Functional View - Metadata Directory</a>, <a href="../EA96.htm">NAP Functional View - Data Platform</a>, <a href="../../EA5/EA224.htm">NAP Physical View - Metadata Directory</a>, <a href="../../EA5/EA226.htm">NAP Physical View - Data Platform</a>, <a href="../../EA6/EA264.htm">NAP Communication View - Data Platform</a>, <a href="../../EA6/EA262.htm">NAP Communication View - Metadata Directory</a></td>
+			<td class="ObjectDetailsValue"><a href="../EA94.htm">NAP Functional View - Metadata Directory</a>, <a href="../EA96.htm">NAP Functional View - Data Platform</a>, <a href="../../EA5/EA228.htm">NAP Physical View - Metadata Directory</a>, <a href="../../EA5/EA230.htm">NAP Physical View - Data Platform</a>, <a href="../../EA6/EA268.htm">NAP Communication View - Data Platform</a>, <a href="../../EA6/EA266.htm">NAP Communication View - Metadata Directory</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">The generic terminator role Metadata Requesting System represents any interested entity in traffic and transport metadata dissemination. The Metadata Requesting System can request information stored in the NAP Metadata store in a standardized format (mobilityDCAT-AP) to incorporate said data into its information services (i.e. metadata harvesting). Therefore, Function F3.6.4 Manage NAP Metadata Retrieval offers a data distribution interface for machine-to-machine data retrieval.&#160;&#160;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Key issue&lt;/b&gt;: Request metadata stored at NAP.&#160;&#160;&lt;br/&gt;&lt;b&gt;Area of responsibility&lt;/b&gt;: Be compliant with the agreement with the NAP operator&#160;&#160;&lt;br/&gt;&lt;b&gt;Tasks&lt;/b&gt;: Receive information about the content in a standardized manner, i.e. metadata&#160;&#160;&#160;&lt;br/&gt;&lt;b&gt;Mnemonic&lt;/b&gt;: nap.mdrs&#160;&#160;&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">The generic terminator role Metadata Provision System represents any compatible entity in metadata storage.&lt;br/&gt;The Metadata Provision System can request storing metadata in the NAP Metadata store. Therefore, Function Metadata Management Module offers an access interface for machine-to-machine data upload. Authorisation is necessary, the Metadata Provision System must use credentials obtained by Content Provider. When registering the Content Provider will obtain credentials and / or to set up a machine account from which data are pushed.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Key issue&lt;/b&gt;: Request to store metadata at NAP.&lt;br/&gt;&lt;b&gt;Area of responsibility&lt;/b&gt;: Be compliant with the agreement with content provider&lt;br/&gt;&lt;b&gt;Tasks&lt;/b&gt;: Upload metadata&lt;br/&gt;&lt;b&gt;Mnemonic&lt;/b&gt;: nap.mdps&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
@@ -112,7 +112,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA3/EA1/EA136.htm">«FRAME_Low_Level_Data_Flow» fnap.mdrs-metadata_request</a><br />
+						<a href="../EA3/EA2/EA161.htm">«FRAME_Low_Level_Data_Flow» ps_metadata & data source</a><br />
 						FRAME_Low_Level_Data_Flow «IN» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -126,8 +126,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink244" onclick="parent.toggleDiv('detailsDIVLink244','DetailsImageLink244')" />Details:
-							<div id="detailsDIVLink244" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink250" onclick="parent.toggleDiv('detailsDIVLink250','DetailsImageLink250')" />Details:
+							<div id="detailsDIVLink250" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -145,7 +145,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA3/EA1/EA160.htm">«FRAME_Low_Level_Data_Flow» tnap.mdrs-metadata_response</a><br />
+						<a href="../EA3/EA2/EA162.htm">«FRAME_Low_Level_Data_Flow» ps_metadata & success report</a><br />
 						FRAME_Low_Level_Data_Flow «OUT» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -159,8 +159,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink245" onclick="parent.toggleDiv('detailsDIVLink245','DetailsImageLink245')" />Details:
-							<div id="detailsDIVLink245" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink251" onclick="parent.toggleDiv('detailsDIVLink251','DetailsImageLink251')" />Details:
+							<div id="detailsDIVLink251" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -202,7 +202,7 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA5/EA3/EA256.htm">«FRAME_Physical_Data_Flow» Metadata to Requesting System</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA5/EA3/EA257.htm">«FRAME_Physical_Data_Flow» Metadata from Metadata Provision System</a></td>
 					<td width="10%" class="TableRow" valign="top">FRAME_Physical_Data_Flow</td>
 					<td width="10%" class="TableRow" valign="top">Usage</td>
 					<td width="10%" class="TableRow" valign="top">To</td>

@@ -1,0 +1,3 @@
+tocTab[tocTab.length] = new Array("0.7.2.1.2:1", "", "«FRAME_Requirement» K.2.1.1 Support to users to register or add data/metadata", "EARoot/EA7/EA2/EA1/EA2/EA375.htm", "19.png", "E149852", "0", "", "Requirement0","{57015FD8-66C2-45e3-8AB9-93A0EAFB1656}");
+tocTab[tocTab.length] = new Array("0.7.2.1.2:2", "", "«FRAME_Requirement» K.2.4.1 NAP promotion – number of channels", "EARoot/EA7/EA2/EA1/EA2/EA376.htm", "19.png", "E149851", "0", "", "Requirement0","{1942245D-8D8A-425c-8364-D8364B8407EA}");
+tocTab[tocTab.length] = new Array("0.7.2.1.2:3", "", "«FRAME_Requirement» K.2.6.1 Contact details", "EARoot/EA7/EA2/EA1/EA2/EA377.htm", "19.png", "E149853", "0", "", "Requirement0","{B16F5B80-17AC-48ed-9C43-CADE9CDCF62A}");

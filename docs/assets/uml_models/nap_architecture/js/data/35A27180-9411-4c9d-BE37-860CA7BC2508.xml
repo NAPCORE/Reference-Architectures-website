@@ -1,0 +1,3 @@
+tocTab[tocTab.length] = new Array("0.7.2.1.4:1", "", "«FRAME_Requirement» K.4.1.1 IT services", "EARoot/EA7/EA2/EA1/EA4/EA383.htm", "19.png", "E149857", "0", "", "Requirement0","{074C6AF9-ECAC-4279-AFF2-82CE9E415FE6}");
+tocTab[tocTab.length] = new Array("0.7.2.1.4:2", "", "«FRAME_Requirement» K.4.2.1 Link checking frequency", "EARoot/EA7/EA2/EA1/EA4/EA384.htm", "19.png", "E149858", "0", "", "Requirement0","{0C2EEA46-1380-4551-AA7C-0AADCB4E42ED}");
+tocTab[tocTab.length] = new Array("0.7.2.1.4:3", "", "«FRAME_Requirement» K4.5.1 Data maintenance", "EARoot/EA7/EA2/EA1/EA4/EA385.htm", "19.png", "E149859", "0", "", "Requirement0","{EC2AF8AF-F8E6-44b1-9189-D1ED47BA5033}");

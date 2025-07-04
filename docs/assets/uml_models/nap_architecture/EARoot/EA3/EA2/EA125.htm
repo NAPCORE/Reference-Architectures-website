@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>NAP Content Consumer</title>
+<title>Terminators::NAP Actors</title>
 <link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("NAP Content Consumer", " : "))</script>  : Public  &lt;&lt;FRAME_Terminator&gt;&gt; FRAME_Terminator</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("NAP Actors", " : "))</script> nap : Public  &lt;&lt;FRAME_Terminator&gt;&gt; FRAME_Terminator</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">30.09.2024 17:36:48</td>
+			<td width="85%" class="ObjectDetailsValue">30.09.2024 18:31:22</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">30.09.2024 19:17:57</td>
+			<td class="ObjectDetailsValue">30.06.2025 1:26:25</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -51,15 +51,15 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="proj00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
-			<td class="ObjectDetailsValue">bures</td>
+			<td class="ObjectDetailsValue">Update after transfer</td>
 		</tr>
 		<tr id="proj01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
-			<td class="ObjectDetailsValue"></td>
+			<td class="ObjectDetailsValue">5.0</td>
 		</tr>
 		<tr id="proj02" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
-			<td class="ObjectDetailsValue"></td>
+			<td class="ObjectDetailsValue">1.0</td>
 		</tr>
 		<tr id="proj03" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
@@ -87,14 +87,14 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{6713B765-606E-4208-8FE8-99B0D50851A5}</td>
+			<td class="ObjectDetailsValue">{E89EDD6C-D939-4b97-AB60-AAD3FA5FE237}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../EA94.htm">NAP Functional View - Metadata Directory</a>, <a href="../EA96.htm">NAP Functional View - Data Platform</a>, <a href="../../EA5/EA224.htm">NAP Physical View - Metadata Directory</a>, <a href="../../EA5/EA226.htm">NAP Physical View - Data Platform</a>, <a href="../../EA6/EA264.htm">NAP Communication View - Data Platform</a>, <a href="../../EA6/EA262.htm">NAP Communication View - Metadata Directory</a></td>
+			<td class="ObjectDetailsValue"></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">The generic terminator role of the NAP Content Consumer represents any interested entity in traffic and transport data. The Content Consumer can find available data via the NAP. Therefore, Function F3.6.4 Provide Access for NAP Meta-Data Retrieval offers an interface (typically a graphical user interface freely accessible via the Internet) to search the meta-data in D3.15 NAP Meta-Data&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Key issue&lt;/b&gt;: Request high-quality services; provide feedback about relevant content&lt;br/&gt;&lt;b&gt;Area of responsibility&lt;/b&gt;: Be compliant with the agreement with the NAP content provider&lt;br/&gt;&lt;b&gt;Tasks&lt;/b&gt;: Receive content &lt;br/&gt;&lt;b&gt;Mnemonic&lt;/b&gt;: nap.cc&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">This Terminator shall represent the actors that participate in the National Access Point (NAP) ITS Service. This ITS Service provides a mechanism that enables organisations to access data available from other ITS Services. It shall consist of the following Terminators.&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;NAP Content Provider&lt;/li&gt;&lt;li&gt;NAP Content Consumer&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;b&gt;Mnemonic&lt;/b&gt;: nap&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
@@ -102,7 +102,6 @@ function nameClassifier(name, separator)
 			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
 			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
 			<li onClick="parent.toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
-			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
 		<div class="ItemBody" id="AssociationsToTable">
 			<table border="0" cellspacing="0" cellpadding="0" class="Table">
@@ -113,8 +112,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA3/EA1/EA161.htm">«FRAME_Low_Level_Data_Flow» fnap.cc-metadata_search_request</a><br />
-						FRAME_Low_Level_Data_Flow «IN» 
+						<a href="../EA3/EA1/EA133.htm">«FRAME_High_Level_Data_Flow» From NAP Actors</a><br />
+						FRAME_High_Level_Data_Flow «IN» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
 						<strong>Name:</strong> &nbsp;<br />
@@ -136,8 +135,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA3/EA1/EA132.htm">«FRAME_Low_Level_Data_Flow» fnap.cc-registration_request</a><br />
-						FRAME_Low_Level_Data_Flow «IN» 
+						<a href="../EA3/EA1/EA135.htm">«FRAME_High_Level_Data_Flow» tnap-mt_outputs</a><br />
+						FRAME_High_Level_Data_Flow «OUT» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
 						<strong>Name:</strong> &nbsp;<br />
@@ -159,8 +158,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA3/EA1/EA162.htm">«FRAME_Low_Level_Data_Flow» fnap.cc-support_request</a><br />
-						FRAME_Low_Level_Data_Flow «IN» 
+						<a href="../EA3/EA1/EA132.htm">«FRAME_High_Level_Data_Flow» fnap-mt_inputs</a><br />
+						FRAME_High_Level_Data_Flow «IN» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
 						<strong>Name:</strong> &nbsp;<br />
@@ -180,10 +179,20 @@ function nameClassifier(name, separator)
 						</div>
 					</td>
 				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="AssociationsFromTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA124.htm">«FRAME_Terminator» NAP Actors</a><br />
-						FRAME_Terminator «component of» 
+						<a href="../EA3/EA1/EA137.htm">«FRAME_High_Level_Data_Flow» To NAP Actors</a><br />
+						FRAME_High_Level_Data_Flow «OUT» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
 						<strong>Name:</strong> &nbsp;<br />
@@ -205,8 +214,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA3/EA1/EA131.htm">«FRAME_Low_Level_Data_Flow» fnap.cc-data_request</a><br />
-						FRAME_Low_Level_Data_Flow «OUT» 
+						<a href="EA127.htm">«FRAME_Terminator» NAP Content Provider</a><br />
+						FRAME_Terminator «component of» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
 						<strong>Name:</strong> &nbsp;<br />
@@ -226,20 +235,10 @@ function nameClassifier(name, separator)
 						</div>
 					</td>
 				</tr>
-
-			</table>
-		</div>
-		<div class="ItemBody" id="AssociationsFromTable">
-			<table border="0" cellspacing="0" cellpadding="0" class="Table">
-				<tr>
-					<td width="40%" class="TableHeading">Element</td>
-					<td width="30%" class="TableHeading">Source Role</td>
-					<td width="30%" class="TableHeading">Target Role</td>
-				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA3/EA1/EA176.htm">«FRAME_Low_Level_Data_Flow» tnap.cc-metadata_search_result</a><br />
-						FRAME_Low_Level_Data_Flow «OUT» 
+						<a href="../EA3/EA1/EA136.htm">«FRAME_High_Level_Data_Flow» To NAP Actors</a><br />
+						FRAME_High_Level_Data_Flow «OUT» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
 						<strong>Name:</strong> &nbsp;<br />
@@ -261,8 +260,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA3/EA1/EA156.htm">«FRAME_Low_Level_Data_Flow» tnap.cc-registration_response</a><br />
-						FRAME_Low_Level_Data_Flow «OUT» 
+						<a href="EA126.htm">«FRAME_Terminator» NAP Content Consumer</a><br />
+						FRAME_Terminator «component of» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
 						<strong>Name:</strong> &nbsp;<br />
@@ -277,52 +276,6 @@ function nameClassifier(name, separator)
 					<td class="TableRowBottomDashed"  colspan="3">
 						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink260" onclick="parent.toggleDiv('detailsDIVLink260','DetailsImageLink260')" />Details:
 							<div id="detailsDIVLink260" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA3/EA1/EA155.htm">«FRAME_Low_Level_Data_Flow» tnap.cc-data_response</a><br />
-						FRAME_Low_Level_Data_Flow «IN» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink261" onclick="parent.toggleDiv('detailsDIVLink261','DetailsImageLink261')" />Details:
-							<div id="detailsDIVLink261" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA3/EA1/EA177.htm">«FRAME_Low_Level_Data_Flow» tnap.cc-support_response</a><br />
-						FRAME_Low_Level_Data_Flow «OUT» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink262" onclick="parent.toggleDiv('detailsDIVLink262','DetailsImageLink262')" />Details:
-							<div id="detailsDIVLink262" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -343,8 +296,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario263" onclick="parent.toggleDiv('detailsDIVScenario263','DetailsImageScenario263')" />Details:
-						<div id="detailsDIVScenario263" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario261" onclick="parent.toggleDiv('detailsDIVScenario261','DetailsImageScenario261')" />Details:
+						<div id="detailsDIVScenario261" class="DetailsDiv" >
 						&nbsp;
 						</div>
 					</div>
@@ -374,54 +327,7 @@ function nameClassifier(name, separator)
 
 
 			</table>
-		</div>		<div class="ItemBody" id="LinksTable">
-			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
-				<tr>
-					<td width="30%" class="TableHeading">Object</td>
-					<td width="10%" class="TableHeading">Type</td>
-					<td width="10%" class="TableHeading">Connection</td>
-					<td width="10%" class="TableHeading">Direction</td>
-					<td width="40%" class="TableHeading">Notes</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA4/EA2/EA215.htm">«FRAME_Agreement» Privacy agreement (CC to NO) and general terms and conditions</a></td>
-					<td width="10%" class="TableRow" valign="top">FRAME_Agreement</td>
-					<td width="10%" class="TableRow" valign="top">Dependency</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA5/EA3/EA255.htm">«FRAME_Physical_Data_Flow» Metadata to Content Consumer</a></td>
-					<td width="10%" class="TableRow" valign="top">FRAME_Physical_Data_Flow</td>
-					<td width="10%" class="TableRow" valign="top">Usage</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA5/EA3/EA257.htm">«FRAME_Physical_Data_Flow» Support of Content Consumer</a></td>
-					<td width="10%" class="TableRow" valign="top">FRAME_Physical_Data_Flow</td>
-					<td width="10%" class="TableRow" valign="top">Usage</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA5/EA3/EA248.htm">«FRAME_Physical_Data_Flow» Data to Content Consumer</a></td>
-					<td width="10%" class="TableRow" valign="top">FRAME_Physical_Data_Flow</td>
-					<td width="10%" class="TableRow" valign="top">Usage</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA5/EA3/EA244.htm">«FRAME_Physical_Data_Flow» Content Consumer Authorization and Registration</a></td>
-					<td width="10%" class="TableRow" valign="top">FRAME_Physical_Data_Flow</td>
-					<td width="10%" class="TableRow" valign="top">Usage</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-
-			</table>
-		</div>
-	</div>
+		</div>	</div>
 <div class="pageFooter"></div>
  
 </body>
