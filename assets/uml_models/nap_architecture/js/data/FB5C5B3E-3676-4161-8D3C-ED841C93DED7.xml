@@ -1,6 +1,6 @@
-tocTab[tocTab.length] = new Array("0.7.3:1", "", "Specifications and Requirements", "EARoot/EA7/EA3/EA339.htm", "175.png", "16", "0", "", "Logical diagram0","{181E0DD3-9A85-41c7-9F72-25A9A92A5A84}");
-tocTab[tocTab.length] = new Array("0.7.3.1", "1", "Legal specifications", "EARoot/EA7/EA3/EA1/EA349.htm", "4.png", "", "", "{B8B78B88-3F81-4273-8934-58DD05C1B2A8}", "Package");
-tocTab[tocTab.length] = new Array("0.7.3.2", "1", "KPI Framework", "EARoot/EA7/EA3/EA2/EA380.htm", "4.png", "", "", "{D8FE367F-943D-4534-9390-BE3D63506234}", "Package");
-tocTab[tocTab.length] = new Array("0.7.3.3", "1", "Recommendations", "EARoot/EA7/EA3/EA3/EA512.htm", "4.png", "", "", "{F21CB3B2-95A3-414b-A3A7-7AE4E898B797}", "Package");
-tocTab[tocTab.length] = new Array("0.7.3.4", "1", "Profiles", "EARoot/EA7/EA3/EA4/EA515.htm", "4.png", "", "", "{A8806412-9C1B-4ff5-9A78-25DC4D58E680}", "Package");
-tocTab[tocTab.length] = new Array("0.7.3.5", "1", "Technical specifications", "EARoot/EA7/EA3/EA5/EA521.htm", "4.png", "", "", "{0A4E614B-9825-42b8-9749-05FB3D2C1A36}", "Package");
+tocTab[tocTab.length] = new Array("0.7.3:1", "", "Specifications and Requirements", "EARoot/EA7/EA3/EA427.htm", "175.png", "2174", "0", "", "Logical diagram0","{181E0DD3-9A85-41c7-9F72-25A9A92A5A84}");
+tocTab[tocTab.length] = new Array("0.7.3.1", "1", "Legal specifications", "EARoot/EA7/EA3/EA1/EA437.htm", "4.png", "", "", "{B8B78B88-3F81-4273-8934-58DD05C1B2A8}", "Package");
+tocTab[tocTab.length] = new Array("0.7.3.2", "1", "KPI Framework", "EARoot/EA7/EA3/EA2/EA460.htm", "4.png", "", "", "{D8FE367F-943D-4534-9390-BE3D63506234}", "Package");
+tocTab[tocTab.length] = new Array("0.7.3.3", "1", "Recommendations", "EARoot/EA7/EA3/EA3/EA545.htm", "4.png", "", "", "{F21CB3B2-95A3-414b-A3A7-7AE4E898B797}", "Package");
+tocTab[tocTab.length] = new Array("0.7.3.4", "1", "Profiles", "EARoot/EA7/EA3/EA4/EA551.htm", "4.png", "", "", "{A8806412-9C1B-4ff5-9A78-25DC4D58E680}", "Package");
+tocTab[tocTab.length] = new Array("0.7.3.5", "1", "Technical specifications", "EARoot/EA7/EA3/EA5/EA559.htm", "4.png", "", "", "{0A4E614B-9825-42b8-9749-05FB3D2C1A36}", "Package");

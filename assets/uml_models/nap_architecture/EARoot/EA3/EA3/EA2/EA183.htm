@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>High Level FDFs::From NAP Actors</title>
+<title>Low Level FDFs::mt_NAP_metadata_mod_result</title>
 <link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("From NAP Actors", " : "))</script>  : Public abstract &lt;&lt;FRAME_High_Level_Data_Flow&gt;&gt; FRAME_High_Level_Data_Flow</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("mt_NAP_metadata_mod_result", " : "))</script> mt_NAP metadata mod result : Public abstract &lt;&lt;FRAME_Low_Level_Data_Flow&gt;&gt; FRAME_Low_Level_Data_Flow</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">30.09.2024 18:36:29</td>
+			<td width="85%" class="ObjectDetailsValue">30.09.2024 18:04:05</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">30.09.2024 19:20:17</td>
+			<td class="ObjectDetailsValue">27.06.2025 17:04:56</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -51,19 +51,19 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="proj00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
-			<td class="ObjectDetailsValue">Update after transfer</td>
+			<td class="ObjectDetailsValue">Petr.Bures</td>
 		</tr>
 		<tr id="proj01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
-			<td class="ObjectDetailsValue">5.0</td>
+			<td class="ObjectDetailsValue"></td>
 		</tr>
 		<tr id="proj02" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
-			<td class="ObjectDetailsValue">1.0</td>
+			<td class="ObjectDetailsValue"></td>
 		</tr>
 		<tr id="proj03" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
-			<td class="ObjectDetailsValue">Validated</td>
+			<td class="ObjectDetailsValue">Proposed</td>
 		</tr>
 		<tr id="proj04" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
@@ -87,21 +87,55 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{C6FE2F39-008F-4811-AE0F-95EB671FFFD2}</td>
+			<td class="ObjectDetailsValue">{3947BAD7-63D3-4efd-9308-DDBCD8C288F9}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"></td>
+			<td class="ObjectDetailsValue"><a href="../../EA94.htm">NAP Functional View - Metadata Directory</a>, <a href="../../EA96.htm">NAP Functional View - Data Platform</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">This data flow only appears in the Context Diagram and contains input from the NAP Actors Terminator.&#160;&#160;It contains data objects containing either the Internet address from which other data objects about ITS Services are available, or a request for access to these data objects.&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">It contains data objects that provide information about the success of loading the newly provided or updated NAP Content Provider metadata into the store of NAP Metadata or provide data objects containing the NAP Content Provider metadata All information stored in the NAP Metadata store about the authorised NAP Content Provider may be retrieved this way.&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
 			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
 			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
 			<li onClick="parent.toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
 		</ul>
+		<div class="ItemBody" id="AssociationsToTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../EA1/EA2/EA113.htm">«FRAME_Low_Level_Function» F3.6.3 Manage Content Providers Metadata</a><br />
+						FRAME_Low_Level_Function «OUT» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink458" onclick="parent.toggleDiv('detailsDIVLink458','DetailsImageLink458')" />Details:
+							<div id="detailsDIVLink458" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
 		<div class="ItemBody" id="AssociationsFromTable">
 			<table border="0" cellspacing="0" cellpadding="0" class="Table">
 				<tr>
@@ -111,8 +145,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA2/EA124.htm">«FRAME_Terminator» NAP Actors</a><br />
-						FRAME_Terminator «IN» 
+						<a href="../../EA1/EA2/EA110.htm">«FRAME_Low_Level_Function» F3.6.1 Manage NAP Metadata Repository</a><br />
+						FRAME_Low_Level_Function «IN» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
 						<strong>Name:</strong> &nbsp;<br />
@@ -125,31 +159,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink466" onclick="parent.toggleDiv('detailsDIVLink466','DetailsImageLink466')" />Details:
-							<div id="detailsDIVLink466" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA182.htm">«FRAME_High_Level_Data_Flow» fnap-mt_inputs</a><br />
-						FRAME_High_Level_Data_Flow «Componentof» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink467" onclick="parent.toggleDiv('detailsDIVLink467','DetailsImageLink467')" />Details:
-							<div id="detailsDIVLink467" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink459" onclick="parent.toggleDiv('detailsDIVLink459','DetailsImageLink459')" />Details:
+							<div id="detailsDIVLink459" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -170,8 +181,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario468" onclick="parent.toggleDiv('detailsDIVScenario468','DetailsImageScenario468')" />Details:
-						<div id="detailsDIVScenario468" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario460" onclick="parent.toggleDiv('detailsDIVScenario460','DetailsImageScenario460')" />Details:
+						<div id="detailsDIVScenario460" class="DetailsDiv" >
 						&nbsp;
 						</div>
 					</div>

@@ -1,1 +1,4 @@
-tocTab[tocTab.length] = new Array("0.7.6.1", "1", "backlog", "EARoot/EA7/EA6/EA1/EA654.htm", "4.png", "", "", "{B1050C29-63B0-4f5f-84B8-0186AE6D7CFF}", "Package");
+tocTab[tocTab.length] = new Array("0.7.4:1", "", "Issues", "EARoot/EA7/EA4/EA579.htm", "178.png", "2187", "0", "", "Component diagram0","{884DEF80-3D4D-47b2-A3BE-1E74312ED360}");
+tocTab[tocTab.length] = new Array("0.7.4.1", "1", "backlog", "EARoot/EA7/EA4/EA1/EA587.htm", "4.png", "", "", "{B1050C29-63B0-4f5f-84B8-0186AE6D7CFF}", "Package");
+tocTab[tocTab.length] = new Array("0.7.4.2", "1", "KPI issues", "EARoot/EA7/EA4/EA2/EA609.htm", "4.png", "", "", "{8C07C709-967C-4fec-A596-3649F300787C}", "Package");
+tocTab[tocTab.length] = new Array("0.7.4.3", "1", "Legal issues", "EARoot/EA7/EA4/EA3/EA628.htm", "4.png", "", "", "{7145F27C-42E4-44d7-85D5-1D9CA93255B9}", "Package");

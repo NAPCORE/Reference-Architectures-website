@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Interfaces::Machine Data Provision</title>
+<title>Interfaces::Content Provider Management</title>
 <link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("Machine Data Provision", " : "))</script>  : Public abstract &lt;&lt;FRAME_Interface&gt;&gt; FRAME_Interface</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("Content Provider Management", " : "))</script>  : Public abstract &lt;&lt;FRAME_Interface&gt;&gt; FRAME_Interface</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">27.01.2024 0:59:41</td>
+			<td width="85%" class="ObjectDetailsValue">21.04.2022 11:42:55</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">13.06.2025 18:01:18</td>
+			<td class="ObjectDetailsValue">04.07.2025 16:13:06</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,14 +87,14 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{EBF272EF-DE4F-4939-83C4-C3924574983A}</td>
+			<td class="ObjectDetailsValue">{D137DB55-A2D0-4a62-9A98-6144AC1C5404}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../EA264.htm">NAP Communication View - Data Platform</a></td>
+			<td class="ObjectDetailsValue"><a href="../EA268.htm">NAP Communication View - Data Platform</a>, <a href="../EA266.htm">NAP Communication View - Metadata Directory</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">&lt;b&gt;Identification: &lt;/b&gt;DPS - DMM; Data Provision System - Data Management Module&lt;br/&gt;&lt;b&gt;Type&lt;/b&gt;: Programming Interface &lt;br/&gt;&lt;b&gt;Description: &lt;/b&gt;This interface is used for the automatic upload of the data to be stored at the NAP by system of Content Provider. To allow for basic security and to identify data requesting system this interface shall require authorization. The API shall provide data insert, modify and delete functionality as web-based user-oriented UI. The authorization is envisaged via machine account preregistration by content provider. &lt;br/&gt;&lt;b&gt;Related Documents&lt;/b&gt;: &lt;a href=&quot;file://https://napcore.eu/activity-wg2-interoperability-and-level-of-service-of-naps/&quot;&gt;&lt;font color=&quot;#467886&quot;&gt;&lt;u&gt;https://napcore.eu/activity-wg2-interoperability-and-level-of-service-of-naps/&lt;/u&gt;&lt;/font&gt;&lt;/a&gt; &lt;br/&gt;=== Communications Requirements ===&lt;br/&gt;&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">&lt;b&gt;Identification: &lt;/b&gt;CP - UMM; Content Provider &#8211; User Management Module&lt;br/&gt;&lt;b&gt;Type&lt;/b&gt;: User interface&lt;br/&gt;&lt;b&gt;Description: &lt;/b&gt;This interface enables content provider to access NAP to change and modify account details including potential machine accounts. It is assumed that the NAP shall have a registration procedure for metadata provider. The registration can differ in Member States. The authenticity of the registered content provider shall be guaranteed and shall follow international standards. The Interface is a web-based application which is supposed to be a part of the NAP web page. The authorised person should be able to access this application through all possible browsers / devices and the graphical interface should at least support the local language.&lt;br/&gt;&lt;b&gt;Related Documents&lt;/b&gt;: &lt;a href=&quot;file://https://napcore.eu/activity-wg2-interoperability-and-level-of-service-of-naps/&quot;&gt;&lt;font color=&quot;#467886&quot;&gt;&lt;u&gt;https://napcore.eu/activity-wg2-interoperability-and-level-of-service-of-naps/&lt;/u&gt;&lt;/font&gt;&lt;/a&gt;&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
@@ -103,7 +103,7 @@ function nameClassifier(name, separator)
 			<li onClick="parent.toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
 		</ul>
 		<div class="ItemBody" id="LinkedDocumentTable">
-			<iframe src="../../../linkdocs/EAID_EBF272EF_DE4F_4939_83C4_C3924574983A.htm" frameborder="0" id="linkDocIFrame"></iframe>
+			<iframe src="../../../linkdocs/EAID_D137DB55_A2D0_4a62_9A98_6144AC1C5404.htm" frameborder="0" id="linkDocIFrame"></iframe>
 		</div>
 		<div class="ItemBody" id="AssociationsFromTable">
 			<table border="0" cellspacing="0" cellpadding="0" class="Table">
@@ -114,7 +114,30 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA5/EA3/EA246.htm">«FRAME_Physical_Data_Flow» Data from Data Provision System</a><br />
+						<a href="../../EA7/EA2/EA1/EA1/EA362.htm">«FRAME_Requirement» K.1.7.1 Consistency and Navigability</a><br />
+						FRAME_Requirement «fulfilled by» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink723" onclick="parent.toggleDiv('detailsDIVLink723','DetailsImageLink723')" />Details:
+							<div id="detailsDIVLink723" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../EA5/EA3/EA264.htm">«FRAME_Physical_Data_Flow» User Management of Content Provider</a><br />
 						FRAME_Physical_Data_Flow «use» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -128,8 +151,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink717" onclick="parent.toggleDiv('detailsDIVLink717','DetailsImageLink717')" />Details:
-							<div id="detailsDIVLink717" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink724" onclick="parent.toggleDiv('detailsDIVLink724','DetailsImageLink724')" />Details:
+							<div id="detailsDIVLink724" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
